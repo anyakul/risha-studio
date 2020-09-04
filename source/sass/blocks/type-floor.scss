@@ -1,0 +1,159 @@
+.type-floor {
+  padding-top: 40px;
+}
+
+.type-floor__wrapper {
+  @include page-width;
+}
+
+.type-floor__header {
+  @include section-header;
+  margin-bottom: 40px;
+}
+
+.type-floor__types-list {
+  @include flex-row;
+  @include cancel-list;
+  margin-bottom: 40px;
+  align-items: stretch;
+
+  li {
+   // @include button;
+    width: 20%;
+  min-height: 80px;
+
+    @media(max-width: $mobile-width) {
+      width: 48%;
+    }
+  }
+
+  button {
+    width: 100%;
+    @include button;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: black-color;
+    border: 1px solid $dark-pink-color;
+
+    @media(max-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+.type-floor__button {
+  @include orange-button;
+background-image: linear-gradient(0deg, #f5910b 0%, #dd0f59 100%);
+width: 20%;
+text-align: center;
+}
+
+.type-floor__types-list-floor {
+  @include flex-row;
+  @include cancel-list;
+  margin-bottom: 50px;
+
+  li {
+    width: 50%;
+    }
+
+  button {
+    width: 100%;
+    @include button;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: black-color;
+    border: 1px solid $dark-pink-color;
+  }
+}
+
+  .type-floor__types-item-active {
+    button {
+      background-color: $dark-pink-color;
+      color: $white-color;
+    }
+  }
+
+.type-floor__catalog-list {
+  @include cancel-list;
+  @include flex-row;
+
+  li {
+    @include list-item;
+    width: 24%;
+  }
+}
+
+.type-floor__button {
+  @include orange-button;
+background-image: linear-gradient(0deg, #f5910b 0%, #dd0f59 100%);
+width: 30%;
+text-align: center;
+
+}
+.type-floor__catalog-list {
+  @include cancel-list;
+  @include flex-row;
+
+  li {
+    @include list-item;
+    width: 24%;
+  }
+}
+
+.type-floor__button {
+  @include orange-button;
+background-image: linear-gradient(0deg, #f5910b 0%, #dd0f59 100%);
+width: 20%;
+text-align: center;
+
+    @media(max-width: $mobile-width) {
+      width: 90%;
+    }
+}
+
+
+.type-floor__types-list-floor {
+  @include flex-row;
+  @include cancel-list;
+  margin-bottom: 50px;
+
+  li {
+    width: 50%;
+    }
+
+  button {
+    width: 100%;
+    @include button;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: black-color;
+    border: 1px solid $dark-pink-color;
+  }
+}
+
+  .type-floor__types-item-active {
+    button {
+      background-color: $dark-pink-color;
+      color: $white-color;
+    }
+  }
+
+.type-floor__catalog-list {
+  @include cancel-list;
+  @include flex-row;
+
+  li {
+    @include list-item;
+    width: 24%;
+  }
+}

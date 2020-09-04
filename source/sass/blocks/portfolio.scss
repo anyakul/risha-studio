@@ -1,0 +1,235 @@
+.portfolio {
+  background-image: url("../img/bg-portfolio.png");
+  padding: 70px 0;
+  background-size: cover;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+  }
+}
+
+.portfolio__wrapper {
+  @include page-width;
+}
+
+.portfolio__slides-wrapper {
+  position: relative;
+}
+
+.portfolio__button-arrows {
+  @include slider-buttons;
+}
+
+.portfolio__slides {
+  @include cancel-list;
+  margin-bottom: 50px;
+}
+
+.portfolio__slide {
+  display: none;
+  background-color: #e9e3ea;
+  padding: 20px 5%; 
+border-radius: 30px;
+  
+  &--active {
+@include flex-row-space;
+  }
+}
+
+.portfolio__slide-header-image {
+  width: 40%;
+    
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+}
+
+.portfolio__slide-image {
+  margin-bottom: 10px;
+    
+    @media (max-width: $tablet-width) {
+      margin: 0 auto;
+      display: block;
+    }
+    
+    @media (max-width: $mobile-width) {
+      width: 40%;
+    }
+}
+
+.portfolio__slide-button-list {
+  @include flex-row;
+  @include cancel-list;
+  justify-content: center;
+    
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio__slide-button-item {
+  margin-right: 10px;
+  background-color: $white-color;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #eda173;
+    
+    @media (max-width: $tablet-width) {
+      width: 15px;
+      height: 15px;
+    }
+  
+  &--active {
+    background-color: #eda173;
+  }
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.portfolio__slide-main {
+  width: 55%;
+    
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      @include flex-row;
+      align-items: flex-start;
+    }
+}
+
+.portfolio__slide-text {
+  width: 84%;
+    
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+}
+
+.portfolio__slide-header {
+  font-size: 20px;
+color: #3e3066;
+font-weight: 500;
+font-family: $font-pragmatica-extended;
+margin-bottom: 60px;
+    
+    @media (max-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
+}
+
+.portfolio__slide-text-group {
+  @include flex-row;
+  align-items: flex-start;
+  
+  &--purpose {
+      @media (max-width: $tablet-width) {
+        width: 50%;
+      }
+    
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+    .portfolio__slide-item {
+      &:before {
+        background-image: url("../img/icon-purpose-item.png");
+        }
+    }
+  }
+  
+  &--task {
+      @media (max-width: $tablet-width) {
+        width: 50%;
+      }
+    
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+
+    .portfolio__slide-item {
+      &:before {
+        background-image: url("../img/icon-task-item.png");
+      }
+    }
+  }
+  
+  &--methods {
+    @media (max-width: $tablet-width) {
+      width: 100%;
+    }
+    .portfolio__slide-item {
+      &:before {
+        background-image: url("../img/icon-methods-item.png");
+      }
+    }
+  }
+  
+  img {
+    margin-right: 30px;
+    
+    @media (max-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.portfolio__slide-list {
+  @include cancel-list;
+}
+
+.portfolio__slide-item {
+  @include flex-row;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 19px;
+  color: #3e3066;
+  font-weight: 300;
+  margin-bottom: 10px;
+  position: relative;
+    
+    @media (max-width: $tablet-width) {
+      width: 94%;
+      margin-left: auto;
+    }
+  
+  &:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -30px;
+    top: 0px;
+    background-repeat: no-repeat;
+  }
+  
+  span {
+    width: 90%;
+    display: block;
+  }
+}
+
+.portfolio__slide-text-group-header {
+  font-size: 25px;
+  color: #3e3066;
+  font-weight: 500;
+  margin-bottom: 15px;
+    
+    @media (max-width: $tablet-width) {
+      font-size: 20px;
+    }
+}
+
+.portfolio__button {
+  @include blue-button;
+  margin-left: auto;
+  display: block;
+  width: 25%;
+    
+    @media (max-width: $tablet-width) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+}

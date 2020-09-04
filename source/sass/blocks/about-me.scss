@@ -1,0 +1,92 @@
+.about-me {
+  background-image: url("../img/bg-about-me.png");
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+}
+
+.about-me__wrapper {
+  @include page-width;
+  color: $white-color;
+  @include flex-row-space;
+}
+
+.about-me__image {
+  background-image: url("../img/bg-about-me-image.png");
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  width: 36%;
+  width: 387px;
+  height: 387px;
+  overflow: hidden;
+  img {
+   // border-radius: 50%;
+    padding-top: 10px;
+    width: 77%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 300px;
+    height: 310px;
+  }
+
+  @media (max-width: $mobile-width) {
+    order: 1;
+  }
+}
+
+.about-me__introduce {
+  width: 60%;
+  padding-top: 30px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.about-me__header {
+  font-size: 18px;
+  font-family: $font-pragmatica-extended;
+  margin-bottom: 25px;
+}
+
+.about-me__text-wrapper {
+  margin-bottom: 30px;
+}
+
+.about-me__text {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.about-me__experience {
+  text-align: right;
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+    order: 3;
+  }
+
+  .about-me__button {
+    margin-left: auto;
+
+    @media (max-width: $mobile-width) {
+      width: 50%;
+      margin-left: 0;
+    }
+
+    @media (max-width: $tablet-width) {
+    }
+  }
+}
+
+.about-me__button {
+  @include blue-button;
+  margin-top: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}

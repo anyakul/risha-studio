@@ -1,0 +1,145 @@
+.work-order {
+  background-image: url("../img/bg.png");
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.work-order__wrapper {
+  @include page-width;
+  @include flex-row;
+  align-items: flex-start;
+}
+
+.work-order__order {
+  width: 45%;
+  padding-left: 5%;
+  
+  @media (max-width: $tablet-width) {
+    padding-left: 11%;
+    width: 89%;
+  }
+}
+
+
+.work-order__form-wrapper {
+  width: 40%;
+  border-radius: 10px;
+  background-image: linear-gradient(170deg, #825482 0%, #da6d50 100%);
+  padding: 20px 3% 30px 4%;
+  padding-bottom: 120px;
+  margin-top: 20px;
+  
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+
+.work-order__form {
+  @include flex-row-space;
+}
+
+.work-order__form-header {
+  @include text;
+  margin-bottom: 30px;
+}
+
+.work-order__form-text {
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.work-order__form-input {
+  padding: 15px;
+  width: 65%;
+border-radius: 10px;
+margin-bottom: 25px;
+font-size: 18px;
+line-height: 35px;
+color: #bfbebe;
+border: none;
+  
+  @media (max-width: $tablet-width) {
+    width: 45%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
+.work-order__form-button {
+  @include green-button-in-form;
+  margin-bottom: 15px;
+  
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.work-order__header {
+  @include section-header;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.work-order__list {
+  color: $white-color;
+  @include cancel-list;
+  
+  @media (max-width: $tablet-width) {
+    @include flex-row-space;
+  }
+}
+
+.work-order__item {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 45px;
+  position: relative;
+  
+  @media (max-width: $tablet-width) {
+    width: 44%;
+    
+    br {
+      display: none;
+    }
+  }
+  
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+  
+  &:before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    background-image: linear-gradient(0deg, #af6882 0%, #da6d50 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: -14%;
+    top: -5px;
+  
+    @media (max-width: $tablet-width) {
+      left: -25%;
+    }
+    
+    @media (max-width: $mobile-width) {
+      left: -13%;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  &--active {
+    &:before {
+      filter: drop-shadow(4.95px 4.95px 0px rgba(0,0,0,0.05));
+      background-image: linear-gradient(90deg, #49d0a8 0%, #44b6af 100%);
+    }
+  }
+}

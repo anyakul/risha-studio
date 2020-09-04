@@ -1,0 +1,91 @@
+.promo {
+  background-image: url("../img/bg.png");
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 55px;
+}
+
+.promo__wrapper {
+  @include page-width;
+  background-image: url("../img/hand-with-lamp.png");
+  background-repeat: no-repeat;
+  background-position: 88% 0;
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  @media (max-width: $tablet-width) {
+    background-size: 40%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-position: 100% 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-size: 42%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-position: 0 0;
+  }
+}
+
+.promo__header {
+  font-size: 37px;
+  line-height: 55px;
+  color: #fa868f;
+  font-weight: 500;
+  font-family: "Pragmatica";
+  width: 55%;
+  margin-bottom: 30px;
+  font-weight: 500;
+
+  @media (max-width: $tablet-width) {
+      width: 78%;
+    br {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 40%;
+    width: 100%;
+    font-size: 4vh;
+    line-height: 5vh;
+    text-align: center;
+    line-height: 28px;
+  }
+}
+
+.promo__text {
+  font-size: 18px;
+  color: $white-color;
+  font-family: "pragmatica extended";
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.promo__text-right {
+  font-size: 14px;
+  color: $white-color;
+  font-family: "pragmatica extended";
+  text-align: right;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.promo__button {
+  @include blue-button-promo;
+  margin-top: 60px;
+  display: block;
+
+  @media (max-width: $tablet-width) {
+    background-size: 30%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}

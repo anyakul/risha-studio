@@ -1,0 +1,133 @@
+.price {
+  background-image: url("../img/bg-price.png");
+  padding: 70px 0;
+  background-size: cover;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+  }
+}
+
+.price__wrapper {
+  @include page-width;
+  @include flex-row;
+}
+
+.price__header {
+  @include section-header;
+  margin-bottom: 30px;
+  margin-right: 5%;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.price__text {
+  @include section-text;
+  text-transform: lowercase;
+}
+
+.price__list-wrapper {
+  border-radius: 80px;
+  padding-left: 4%;
+  padding-right: 2%;
+  padding-top: 40px;
+  width: 55%;
+  background-color: #c2aec0;
+  text-transform: uppercase;
+  
+  @media(max-width: $mobile-width) {
+    width: 94%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding-top: 20px;
+  }
+}
+
+.price__list {
+  @include cancel-list;
+}
+
+.price__item {
+  @include flex-row-space;
+  margin-bottom: 15px;
+}
+
+.price__button {
+  @include green-button;
+}
+
+.price__item-header {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 500;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.price__item-number {
+  font-size: 18px;
+  line-height: 24px;
+  color: #5a4485;
+  font-weight: 500;
+  text-align: right;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.price__item-text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+  }
+}
+
+.price__form-wrapper {
+  width: 35%;
+  margin-left: auto;
+  
+  @media(max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.price__form-header {
+  @include text;
+  margin-bottom: 20px;
+}
+
+.price__form-text {
+  font-size: 15px;
+line-height: 18px;
+color: #ffffff;
+margin-bottom: 20px;
+}
+
+.price__form-input {
+  padding: 15px;
+  width: 80%;
+border-radius: 10px;
+margin-bottom: 30px;
+font-size: 18px;
+line-height: 35px;
+color: #bfbebe;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.price__form-button {
+  @include blue-button-in-form;
+}

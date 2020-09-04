@@ -1,0 +1,23 @@
+.page {
+  background-color: $dark-blue-color;
+
+  &--promo {
+    background-image: url("../img/bg.png");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 55px;
+  }
+
+  &--about-me {
+    background-image: url("../img/bg-about-me.png");
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 55px;
+  }
+}
+
+.page__wrapper {
+  @include page-width;
+}
