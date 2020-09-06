@@ -1,14 +1,12 @@
 .about-me {
-  background-image: url("../img/bg-about-me.png");
-  padding-top: 40px;
-  padding-bottom: 40px;
-  
+  @include section;
 }
 
 .about-me__wrapper {
   @include page-width;
   color: $white-color;
   @include flex-row-space;
+  align-items: flex-start;
 }
 
 .about-me__image {
@@ -19,6 +17,7 @@
   width: 387px;
   height: 387px;
   overflow: hidden;
+  border-radius: 50%;
   img {
    // border-radius: 50%;
     padding-top: 10px;
@@ -26,8 +25,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 300px;
-    height: 310px;
+    width: 265px;
+    height: 265px;
   }
 
   @media (max-width: $mobile-width) {
@@ -38,6 +37,7 @@
 .about-me__introduce {
   width: 60%;
   padding-top: 30px;
+    margin-bottom: 40px;
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -46,7 +46,7 @@
 }
 
 .about-me__header {
-  font-size: 18px;
+  font-size: 2.2vh;
   font-family: $font-pragmatica-extended;
   margin-bottom: 25px;
 }
@@ -56,7 +56,8 @@
 }
 
 .about-me__text {
-  font-size: 18px;
+  font-size: 2vh;
+  line-height: 3vh;
   color: #ffffff;
 }
 

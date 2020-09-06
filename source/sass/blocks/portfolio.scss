@@ -1,7 +1,5 @@
 .portfolio {
-  background-image: url("../img/bg-portfolio.png");
-  padding: 70px 0;
-  background-size: cover;
+  @include section;
 
   @media (max-width: $mobile-width) {
     padding-top: 30px;
@@ -14,6 +12,8 @@
 
 .portfolio__slides-wrapper {
   position: relative;
+  width: 83vw;
+  margin: 0 auto;
 }
 
 .portfolio__button-arrows {
@@ -28,7 +28,7 @@
 .portfolio__slide {
   display: none;
   background-color: #e9e3ea;
-  padding: 20px 5%; 
+  padding: 20px 20px 20px 40px; 
 border-radius: 30px;
   
   &--active {
@@ -108,7 +108,7 @@ border-radius: 30px;
 }
 
 .portfolio__slide-header {
-  font-size: 20px;
+  font-size: 3vh;
 color: #3e3066;
 font-weight: 500;
 font-family: $font-pragmatica-extended;
@@ -182,8 +182,8 @@ margin-bottom: 60px;
 .portfolio__slide-item {
   @include flex-row;
   align-items: flex-start;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 2.2vh;
+  line-height: 2.5vh;
   color: #3e3066;
   font-weight: 300;
   margin-bottom: 10px;
@@ -191,7 +191,6 @@ margin-bottom: 60px;
     
     @media (max-width: $tablet-width) {
       width: 94%;
-      margin-left: auto;
     }
   
   &:before {
@@ -211,7 +210,7 @@ margin-bottom: 60px;
 }
 
 .portfolio__slide-text-group-header {
-  font-size: 25px;
+  font-size: 4vh;
   color: #3e3066;
   font-weight: 500;
   margin-bottom: 15px;

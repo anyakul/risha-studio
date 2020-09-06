@@ -1,7 +1,5 @@
 .contacts {
-  background-image: url("../img/bg.png");
-  padding-top: 40px;
-  padding-bottom: 10px;
+  @include section;
 }
 
 .contacts__wrapper {
@@ -30,14 +28,14 @@ padding-top: 20px;
 }
 
 .contacts__item-header {
-  font-size: 20px;
+  font-size: 3vh;
   color: #ffffff;
   font-family: $font-pragmatica-extended;
   margin-bottom: 10px;
 }
 
 .contacts__item-text {
-  font-size: 20px;
+  font-size: 2.8vh;
   color: #ffffff;
   font-family: $font-pragmatica-extended;
   margin-bottom: 10px;
@@ -52,4 +50,19 @@ padding-top: 20px;
 
 .contacts__item-phone {
   @include flex-row;
+}
+
+.contacts__item-button {
+  @include green-button;
+  display: block;
+  margin-left: auto;
+  width: 20%;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: -50px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  margin-bottom: -25px;
+  }
 }

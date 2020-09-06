@@ -1,7 +1,5 @@
 .price {
-  background-image: url("../img/bg-price.png");
-  padding: 70px 0;
-  background-size: cover;
+  @include section;
 
   @media (max-width: $mobile-width) {
     padding-top: 30px;
@@ -16,26 +14,46 @@
 .price__header {
   @include section-header;
   margin-bottom: 30px;
-  margin-right: 5%;
+  margin-right: 5vw;
+  width: 20vw; 
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    width: 33%;
+  }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 20px;
+    width: 100%;
   }
 }
 
 .price__text {
   @include section-text;
   text-transform: lowercase;
+  width: 55vw; 
+
+  @media (max-width: $tablet-width) {
+    width: 57%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .price__list-wrapper {
   border-radius: 80px;
-  padding-left: 4%;
-  padding-right: 2%;
+  padding-left: 2vw;
+  padding-right: 2vw;
   padding-top: 40px;
-  width: 55%;
+  width: 40vw;
   background-color: #c2aec0;
   text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    width: 55%;
+  }
   
   @media(max-width: $mobile-width) {
     width: 94%;
@@ -51,7 +69,8 @@
 
 .price__item {
   @include flex-row-space;
-  margin-bottom: 15px;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .price__button {
@@ -59,42 +78,36 @@
 }
 
 .price__item-header {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 2.5vh;
+  line-height: 2.5px;
+  margin-bottom: 10px;
   color: #ffffff;
   font-weight: 500;
-
-  @media (max-width: $mobile-width) {
-    font-size: 16px;
-  }
 }
 
 .price__item-number {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 2.2vh;
+  line-height: 2.5vh;
   color: #5a4485;
   font-weight: 500;
   text-align: right;
-
-  @media (max-width: $mobile-width) {
-    font-size: 16px;
-  }
+  margin-bottom: 10px;
 }
 
 .price__item-text {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 2.0vh;
+  line-height: 2.5vh;
   font-weight: 500;
   width: 100%;
-
-  @media (max-width: $mobile-width) {
-    font-size: 14px;
-  }
 }
 
 .price__form-wrapper {
-  width: 35%;
+  width: 38vw;
   margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 35%;
+  }
   
   @media(max-width: $mobile-width) {
     width: 100%;
@@ -107,24 +120,23 @@
 }
 
 .price__form-text {
-  font-size: 15px;
-line-height: 18px;
-color: #ffffff;
-margin-bottom: 20px;
+  font-size: 2.6vh;
+  line-height: 3vh;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .price__form-input {
   padding: 15px;
   width: 80%;
 border-radius: 10px;
-margin-bottom: 30px;
-font-size: 18px;
-line-height: 35px;
+margin-bottom: 20px;
+font-size: 2.6vh;
+    line-height: 3vh;
 color: #bfbebe;
 
   @media (max-width: $mobile-width) {
-    font-size: 16px;
-    line-height: 24px;
+    
   }
 }
 

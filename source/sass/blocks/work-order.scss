@@ -1,7 +1,5 @@
 .work-order {
-  background-image: url("../img/bg.png");
-  padding-top: 40px;
-  padding-bottom: 10px;
+  @include section;
 }
 
 .work-order__wrapper {
@@ -15,7 +13,7 @@
   padding-left: 5%;
   
   @media (max-width: $tablet-width) {
-    padding-left: 11%;
+    padding-left: 0;
     width: 89%;
   }
 }
@@ -42,6 +40,8 @@
 .work-order__form-header {
   @include text;
   margin-bottom: 30px;
+  font-size: 2.6vh;
+  line-height: 3vh;
 }
 
 .work-order__form-text {
@@ -49,6 +49,8 @@
   line-height: 18px;
   color: #ffffff;
   margin-bottom: 20px;
+  font-size: 2.3vh;
+  line-height: 3vh;
 }
 
 .work-order__form-input {
@@ -97,7 +99,8 @@ border: none;
 }
 
 .work-order__item {
-  font-size: 20px;
+  font-size: 2.6vh;
+  line-height: 3vh;
   color: #ffffff;
   font-weight: 500;
   margin-bottom: 45px;
@@ -113,12 +116,13 @@ border: none;
   
   @media (max-width: $mobile-width) {
     width: 100%;
+    padding-left: 50px;
   }
   
   &:before {
     content: "";
-    width: 63px;
-    height: 63px;
+    width: 4vw;
+    height: 4vw;
     background-image: linear-gradient(0deg, #af6882 0%, #da6d50 100%);
     border-radius: 50%;
     position: absolute;
@@ -126,13 +130,13 @@ border: none;
     top: -5px;
   
     @media (max-width: $tablet-width) {
-      left: -25%;
+      left: -15%;
     }
     
     @media (max-width: $mobile-width) {
-      left: -13%;
-      width: 30px;
-      height: 30px;
+      left: -17px;
+      width: 50px;
+      height: 50px;
     }
   }
   
