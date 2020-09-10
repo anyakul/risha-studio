@@ -1,19 +1,51 @@
 .price {
   @include section;
+  position: relative;
+  
+  &:before {
+    content: "";
+    width: 50vw;
+    height: 30vh;
+    z-index: 1;
+    bottom: -1vh;
+    left: 2vw;
+    position: absolute;
+    background-image: url("../img/price-clouds.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   // background-position: 100%;
 
-  @media (max-width: $mobile-width) {
-    padding-top: 30px;
+    @media (max-width: $tablet-width) {
+      left: -7%;
+      height: 26vh;
+      top: 72%;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
+}
+
+.price__item-image-planet {
+  position: absolute;
+  top: 45vh;
+  right: 7vw;
+  z-index: 5;
 }
 
 .price__wrapper {
   @include page-width;
+  align-items: flex-start;
+  position: relative;
+}
+
+.price__header-text {
   @include flex-row;
 }
 
 .price__header {
   @include section-header;
-  margin-bottom: 30px;
   margin-right: 5vw;
   width: 20vw; 
 
@@ -44,12 +76,14 @@
 
 .price__list-wrapper {
   border-radius: 80px;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 40px;
+  padding-left: 3vw;
+  padding-right: 1vw;
+  padding-top: 4vh;
   width: 40vw;
   background-color: #c2aec0;
   text-transform: uppercase;
+  position: absolute;
+  padding-bottom: 5vh;
 
   @media (max-width: $tablet-width) {
     width: 55%;
@@ -65,37 +99,58 @@
 
 .price__list {
   @include cancel-list;
+  margin-bottom: 5vh;
 }
 
 .price__item {
   @include flex-row-space;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 1vh;
 }
 
 .price__button {
   @include green-button;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 35vw;
+  margin-left: auto;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    width: 38vw;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+  
+}
+
+.price__list-form {
+  @include flex-row;
 }
 
 .price__item-header {
-  font-size: 2.5vh;
-  line-height: 2.5px;
-  margin-bottom: 10px;
+  font-size: 2vh;
+  line-height: 2.5vh;
+  margin-bottom: 2vh;
   color: #ffffff;
   font-weight: 500;
 }
 
 .price__item-number {
-  font-size: 2.2vh;
-  line-height: 2.5vh;
+  font-size: 1.5vh;
+  line-height: 2vh;
   color: #5a4485;
   font-weight: 500;
   text-align: right;
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
+  margin-right: 5vw;
 }
 
 .price__item-text {
-  font-size: 2.0vh;
+  font-size: 1.5vh;
   line-height: 2.5vh;
   font-weight: 500;
   width: 100%;
@@ -104,6 +159,7 @@
 .price__form-wrapper {
   width: 38vw;
   margin-left: auto;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     width: 35%;
@@ -114,24 +170,46 @@
   }
 }
 
+
+.price__item-image-racket {
+  position: absolute;
+
+  &--one {
+    left: -1vw;
+  }
+
+  &--two {
+    right: 5vw;
+    top: 17vh;
+    height: 100px;
+    height: 20vh;
+  }
+
+  &--three {
+    right: 2vw;
+    top: -14vh;
+    
+  }
+}
+
 .price__form-header {
   @include text;
-  margin-bottom: 20px;
+  margin-bottom: 3vh;
 }
 
 .price__form-text {
   font-size: 2.6vh;
   line-height: 3vh;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 4vh;
 }
 
 .price__form-input {
-  padding: 15px;
+  padding: 2vh 2vw;
   width: 80%;
 border-radius: 10px;
-margin-bottom: 20px;
-font-size: 2.6vh;
+margin-bottom: 2vh;
+font-size: 2vh;
     line-height: 3vh;
 color: #bfbebe;
 

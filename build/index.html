@@ -50,7 +50,7 @@
                 <p class="promo__text">Логотипы и маркетинг-киты</p>
                 <p class="promo__text">Контекстная реклама</p>
               </div>
-              <a class="promo__button" href="#">Подробнее</a>
+              <a class="promo__button" href="#about-me">Подробнее</a>
             </div>
             <img class="promo__image" src="img/hand-with-lamp.png" loading="lazy" alt="Логотип">
             <div class="promo__texts-right">
@@ -97,6 +97,8 @@
               <li class="services__item">
                 <div class="services__item-text-wrapper">
                   <h3 class="services__item-header">Дизайн</h3>
+                  <img class="services__item-image-planet" src="img/services-item-planet.png" alt="Логотип">
+                  <img class="services__item-image-racket" src="img/services-item-racket.png" alt="Логотип">
                   <p class="services__item-text">Отрисую с нуля <b>фирменный стиль</b> Вашей компании - или же предложу современный ребрендинг существующему.</p>
                   <p class="services__item-text"><b>Гайдбук</b> для авторских дизайнов</p>
                 </div>
@@ -105,6 +107,7 @@
               <li class="services__item">
                 <div class="services__item-text-wrapper">
                   <h3 class="services__item-header">Сайты</h3>
+                  <img class="services__item-image-planet" src="img/services-item-blue-planet.png" alt="Логотип">
                   <p class="services__item-text">Полностью возьму на себя <b>создание сайта</b> отвечающего вашим потребностям, раскрывающего правильно подобранный <b>образ компании</b> и создающего целевой <b>поток клиентов</b> для Вашей компании </p>
                   <p class="services__item-text">Адаптивная верстка</p>
                   <p class="services__item-text">Интеграция с CRM-системой</p>
@@ -113,6 +116,8 @@
               </li>
               <li class="services__item">
                 <div class="services__item-text-wrapper">
+                  <img class="services__item-image-planet" src="img/services-item-blue-planet.png" alt="Логотип">
+                  <img class="services__item-image-racket" src="img/services-item-racket.png" alt="Логотип">
                   <h3 class="services__item-header">Полиграфия</h3>
                   <p class="services__item-text">Подготовлю для Вас макеты любой полиграфической продукции: <b>визитка, флаера, каталоги, меню, маркетинг-киты или билбоарды</b>. Под ключ, с печатью и доставкой тиража</p>
                 </div>
@@ -120,6 +125,7 @@
               </li>
               <li class="services__item">
                 <div class="services__item-text-wrapper">
+                  <img class="services__item-image-racket" src="img/services-item-racket.png" alt="Логотип">
                   <h3 class="services__item-header">Контекстная реклама</h3>
                   <p class="services__item-text">Полностью настрою и сопровожу <b>контекстную рекламу в Яндекс.Директ</b></p>
                   <p class="services__item-text">Делаю <b>аудиты</b> рекламных компаний, даю рекомендации по улучшению</p>
@@ -132,52 +138,63 @@
         </section>
         <section class="main__section price" id="price">
           <div class="price__wrapper">
-            <h2 class="price__header">Прозрачные цены</h2>
-            <p class="price__text">Без скрытых доп.платежей</p>
-            <div class="price__list-wrapper">
-              <ul class="price__list">
-                <li class="price__item">
-                  <h3 class="price__item-header">Landing-page</h3>
-                  <p class="price__item-number">от 22 000 р</p>
-                  <p class="price__item-text">Целевая продающая страница. Это идеальный инструмент для продажи Ваших отдельных товаров и услуг.</p>
-                </li>
-                <li class="price__item">
-                  <h3 class="price__item-header">Корпоративный сайт</h3>
-                  <p class="price__item-number">от 30 000 р</p>
-                  <p class="price__item-text">Полнофнкциональный сайт, с расширенными возможностяи, без ограничений по количеству уровней</p>
-                </li>
-                <li class="price__item">
-                  <h3 class="price__item-header">Интернет-магазин</h3>
-                  <p class="price__item-number">от 45 000 р</p>
-                  <p class="price__item-text">Интерактивный веб-сайт, торгующий товарами</p>
-                </li>
-                <li class="price__item">
-                  <h3 class="price__item-header">Создание логотипа</h3>
-                  <p class="price__item-number">от 3 000 р</p>
-                </li>
-                <li class="price__item">
-                  <h3 class="price__item-header">Разработка Маркетинг-кита</h3>
-                  <p class="price__item-number">от 15 000 р</p>
-                </li>
-                <li class="price__item">
-                  <h3 class="price__item-header">Контекстная реклама</h3>
-                  <p class="price__item-number">от 10 000 р</p>
-                </li>
-              </ul>
-              <a class="price__button" href="#">Узнать сколько будет стоить мой проект</a>
+            <div class="price__header-text">
+              <h2 class="price__header">Прозрачные цены</h2>
+              <p class="price__text">Без скрытых доп.платежей</p>
             </div>
-            <div class="price__form-wrapper">
-              <h3 class="price__form-header">Специальные условия для благотворитальных организаций и приютов для животных</h3>
-              <p class="price__form-text">Оставьте заявку и получитее безвозмездную помощь в создании сайта и привлечении социального внимания</p>
-              <form class="price__form">
-                <input class="price__form-input" type="text" placeholder="Ваше имя">
-                <input class="price__form-input" type="tel" placeholder="Ваш номер">
-                <button class="price__form-button">Заказать звонок</button>
-              </form>          
+            <div class="price__list-form">
+              <div class="price__list-wrapper">
+                <img class="price__item-image-planet" src="img/planet.png" alt="Логотип">
+                <ul class="price__list">
+                  <li class="price__item">
+                    <h3 class="price__item-header">Landing-page</h3>
+                    <p class="price__item-number">от 22 000 р</p>
+                    <p class="price__item-text">Целевая продающая страница. Это идеальный инструмент для продажи Ваших отдельных товаров и услуг.</p>
+                  </li>
+                  <li class="price__item">
+                    <h3 class="price__item-header">Корпоративный сайт</h3>
+                    <p class="price__item-number">от 30 000 р</p>
+                    <p class="price__item-text">Полнофнкциональный сайт, с расширенными возможностями, без ограничений по количеству уровней</p>
+                  </li>
+                  <li class="price__item">
+                    <h3 class="price__item-header">Интернет-магазин</h3>
+                    <p class="price__item-number">от 45 000 р</p>
+                    <p class="price__item-text">Интерактивный веб-сайт, торгующий товарами</p>
+                  </li>
+                  <li class="price__item">
+                    <h3 class="price__item-header">Создание логотипа</h3>
+                    <p class="price__item-number">от 3 000 р</p>
+                  </li>
+                  <li class="price__item">
+                    <h3 class="price__item-header">Разработка Маркетинг-кита</h3>
+                    <p class="price__item-number">от 15 000 р</p>
+                  </li>
+                  <li class="price__item">
+                    <h3 class="price__item-header">Контекстная реклама</h3>
+                    <p class="price__item-number">от 10 000 р</p>
+                  </li>
+                </ul>
+                <a class="price__button" href="#">Узнать сколько будет стоить мой проект</a>
+              </div>
+              <div class="price__form-wrapper">
+                <img class="price__item-image-racket price__item-image-racket--one" src="img/services-item-racket.png" alt="Логотип">
+                <img class="price__item-image-racket price__item-image-racket--two" src="img/services-item-racket.png" alt="Логотип">
+                <img class="price__item-image-racket price__item-image-racket--three" src="img/services-item-racket.png" alt="Логотип">
+                <h3 class="price__form-header">Специальные условия для благотворитальных организаций и приютов для животных</h3>
+                <p class="price__form-text">Оставьте заявку и получитее безвозмездную помощь в создании сайта и привлечении социального внимания</p>
+                <form class="price__form">
+                  <input class="price__form-input" type="text" placeholder="Ваше имя">
+                  <input class="price__form-input" type="tel" placeholder="Ваш номер">
+                  <button class="price__form-button">Заказать звонок</button>
+                </form>          
+              </div>
             </div>
           </div>
         </section>
         <section class="main__section portfolio" id="portfolio">
+          <img class="portfolio__image portfolio__image--racket" src="img/racket.png" alt="Логотип">
+          <img class="portfolio__image portfolio__image--planet" src="img/planet.png" alt="Логотип">
+          <img class="portfolio__image portfolio__image--dark-racket" src="img/racket-dark.png" alt="Логотип">
           <div class="portfolio__wrapper">
             <h2 class="portfolio__header visually-hidden">Портфолио</h2>
             <div class="portfolio__slides-wrapper">
@@ -253,13 +270,15 @@
             <a class="portfolio__button" href="#">Еще больше готовых работ</a>
           </div>
         </section>
-    <!--    <section class="main__section opinion">
+        <section class="main__section opinion">
           <div class="opinion__wrapper">
+            <img class="opinion__image opinion__image--dark-racket" src="img/racket-dark.png" alt="Логотип">
             <h2 class="opinion__header">Что говорят клиенты о работе со мной:</h2>
             <div class="opinion__list-wrapper">
         -     <button class="opinion__button-arrows opinion__button-arrows--left"></button>
               <button class="opinion__button-arrows opinion__button-arrows--right"></button>
               <ul class="opinion__list">
+                <img class="opinion__image opinion__image--planet" src="img/planet.png" alt="Логотип">
                 <li class="opinion__item opinion__item--active">
                   <div class="opinion__item-image">
                     <img src="img/vladimir-e.png" alt="Логотип">
@@ -281,6 +300,7 @@
                   <a class="opinion__item-button" href="#">Благодарность</a>
                 </li>
                 <li class="opinion__item">
+                 <img class="opinion__image opinion__image--racket" src="img/racket.png" alt="Логотип">
                   <div class="opinion__item-image">
                     <img src="img/ruslan.png" alt="Логотип">
                   </div>
@@ -291,11 +311,12 @@
                   <a class="opinion__item-button" href="#">Благодарность</a>
                 </li>
                 <li class="opinion__item">
+                  <img class="opinion__image opinion__image--racket" src="img/racket.png" alt="Логотип">
                   <div class="opinion__item-image">
                     <img src="img/vladimir-i.png" alt="Логотип">
                   </div>
                   <h3 class="opinion__item-header">Владимир И.</h3>
-                  <p class="opinion__item-text">Знаю Дашу 5 лет - обращался к гнй за дизайнами - флаеры, меню</p>
+                  <p class="opinion__item-text">Знаю Дашу 5 лет - обращался к ней за дизайнами - флаеры, меню</p>
                   <p class="opinion__item-text">Сейчас сотрудничаем - ведет SMMпродвижение нашего кафе</p>
                   <p class="opinion__item-text">Фото сама делает, и посты. Нокогда не подводила по срокам</p>
                   <a class="opinion__item-button" href="#">Благодарность</a>
@@ -337,26 +358,77 @@
             <div class="contacts__group">
               <h2 class="contacts__header">Как со мной связаться:</h2>
               <div class="contacts__item">
-                  <h3 class="contacts__item-header">Всегда готова обсудить детали лично по адресу:</h3>
-                  <p class="contacts__item-text">г. Москва, Дмитровское шоссе, 100с2, офис 4502</p>
-                  <img class="contacts__item-image" src="img/map.png" loading="lazy" alt="Карта">
-                  <div class="contacts__item-phone">
-                    <p class="contacts__item-text">и по телефону:</p>
-                    <div class="contacts__item-numbers">
-                      <p class="contacts__item-text">+7(495) 135-25-87</p>
-                      <p class="contacts__item-text">+7(916) 366-66-83</p>
-                    </div>
+                <h3 class="contacts__item-header">Всегда готова обсудить детали лично по адресу:</h3>
+                <p class="contacts__item-text">г. Москва, Дмитровское шоссе, 100с2, офис 4502</p>
+                <img class="contacts__item-image" src="img/map.png" loading="lazy" alt="Карта">
+                <div class="contacts__item-phone">
+                  <p class="contacts__item-text">и по телефону:</p>
+                  <div class="contacts__item-numbers">
+                    <p class="contacts__item-text">+7(495) 135-25-87</p>
+                    <p class="contacts__item-text">+7(916) 366-66-83</p>
                   </div>
-                  <a class="contacts__item-button" href="#">Заказать звонок</a>
                 </div>
+                <a class="contacts__item-button" href="#">Заказать звонок</a>
               </div>
             </div>
+          </div>
         </section>
       </div>
-<!--    </main>
-  </div>-->
+    </main>
+  </div>
  <!-- <script src="js/promo.js"></script>-->
   <script src="js/menu-script.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
-</div></main></div></body>
+</body>
 </html>
+
+
+<!--1 окно
+Выезжающий текст с анимацией, пример (nisnom.com/veb-razrabotki... )
+Рука с лампой немного "двигается" в пространстве                                                     ГОТОВО
+Кнопка подробнее с такой анимацией – codepen.io/chrisota/pen/b... – введет на ссылку "Обо мне"       ГОТОВО
+Прокрутка колесика мышки также ведет на след слайд, раздел "обо мне"
+Меню в шапке анимируется по примеру – age-dragon.com/scripts/34... – 11 пример – но без верхней линии
+
+2 окно
+кнопки синие анимация такая же codepen.io/chrisota/pen/b...
+метеориты двигаются в пространстве
+звездочки "мигают" но оооочень медленно
+
+3 окно
+анимация собирающихся "окон" в центре
+кнопки синие анимация такая же codepen.io/chrisota/pen/b...
+анимация – планеты и созвездие летают по пространству
+анимация – кометы летят ввысь
+
+4 окно
+кнопка градиент анимация codepen.io/pirrera/pen/bq...
+кнопки синие анимация такая же codepen.io/chrisota/pen/b...
+анимация – планеты и созвездие летают по пространству
+анимация – кометы летят ввысь
+
+5 окно
+два слайдер
+один слайдер проектов (стрелки по бокам, фиолетовая неактивная, рыжая активная) листает основное окно можно использовать Slick – kenwheeler.github.io/slic...
+второй слайдер показывает фото по конкретному проекту, и переключается на след фото по истечении времени (mod autoplay)
+планета вверху лого немного "двигается"
+кнопка градиент анимация codepen.io/pirrera/pen/bq... – ведет на портфолио в PDF
+
+6 окно
+анимация кнопок градиент – codepen.io/pirrera/pen/bq...
+кнопка благодарность ведет на всплывающие окно с фотографией благодарственного письма
+при наведении на отзыв он загорается более светлым, и становится активным. 
+слайдер отзывов (стрелки по бокам, фиолетовая неактивная, рыжая активная) листает отзывы) можно использовать Slick – kenwheeler.github.io/slic...
+
+7 окно
+при наведении мышкой на круг и рядом стоящий текст из списка "порядок работ" он становится другого цвета и переливается градиентом
+анимация кнопок градиент – codepen.io/pirrera/pen/bq...
+анимация – планеты и созвездие летают по пространству
+анимация – кометы летят ввысь
+
+8 окно
+Интерактивная Карта с Яндекса
+анимация прилетающей ракеты, и немного двигающейся после
+анимация кнопок градиент – codepen.io/pirrera/pen/bq...
+анимация – планеты и созвездие летают по пространству
+анимация – кометы летят ввысь-->

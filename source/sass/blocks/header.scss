@@ -1,17 +1,21 @@
 .header {
-  z-index: 100;
-  padding-left: 5vw;
-  width: 100%;
+  z-index: 80;
+  padding-left: 10vw;
+  width: 95vw;
   height: 10vh;
-
+  position: fixed;
+  z-index: 100;
+  
   @media (max-width: $tablet-width) {
-    z-index: 100;
+    height: 15vh;
+    padding-top: 10vh;
   }
 }
 
 .header__wrapper {
   @include page-width;
   height: 10vh;
+  width: 95vw;
   padding-bottom: 3vh;
   padding-top: 3vh;
   vertical-align: middle;
@@ -20,19 +24,25 @@
 }
 
 .header__logo-link {
-  width: 20%;
+  width: 20vw;
 
-    @media (max-width: $mobile-width) {
+    @media (max-width: $tablet-width) {
     width: 100%;
       img {
-        width: 100px;
+        width: 20%;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      img {
+        width: 70%;
       }
     }
 }
 
 .header__nav {
-  width: 70%;
-  margin-left: 10%;
+  width: 55vw;
+  margin-left: 10vw;
 }
 
 .header__button {
@@ -46,8 +56,10 @@
     width: 35px;
     height: 25px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1vw;
+    top: 2%;
+    top: 10vh;
+    z-index: 90;
   }
 }
 
@@ -64,7 +76,7 @@
         display: flex;
         padding: 20px 0;
         border-radius: 20px;
-        background-color: $dark-blue-color;
+        z-index: 99;
       }
 
       .header__menu-item {
@@ -97,7 +109,6 @@
 .header__menu {
   @include flex-row-space;
   @include cancel-list;
-  width: 92%;
 //  position: fixed;
   
   

@@ -1,8 +1,53 @@
 .portfolio {
   @include section;
+  position: relative;
+  margin-right: 15vw;
+  
+  &:before {
+    content: "";
+    width: 35vw;
+    height: 80vh;
+    z-index: 1;
+    left: -10vw;
+    top: -34vh;
+    position: absolute;
+    background-image: url("../img/bg-portfolio.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+
+    @media (max-width: $tablet-width) {
+      left: -7%;
+      height: 26vh;
+      top: 72%;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
 
   @media (max-width: $mobile-width) {
     padding-top: 30px;
+  }
+}
+
+.portfolio__image {
+  position: absolute;
+  
+  &--planet {
+    right: -5vw;
+    bottom: 10vh;
+  }
+  
+  &--racket {
+    bottom: 15vh;
+    left: 5vw;
+  }
+  
+  &--dark-racket {
+    top: 15vh;
+    right: -5vw;
   }
 }
 
@@ -12,7 +57,7 @@
 
 .portfolio__slides-wrapper {
   position: relative;
-  width: 83vw;
+  //width: 8vw;
   margin: 0 auto;
 }
 
@@ -22,13 +67,12 @@
 
 .portfolio__slides {
   @include cancel-list;
-  margin-bottom: 50px;
 }
 
 .portfolio__slide {
   display: none;
   background-color: #e9e3ea;
-  padding: 20px 20px 20px 40px; 
+  padding: 3vh 20px 3vh 40px; 
 border-radius: 30px;
   
   &--active {
@@ -45,11 +89,11 @@ border-radius: 30px;
 }
 
 .portfolio__slide-image {
-  margin-bottom: 10px;
     
     @media (max-width: $tablet-width) {
       margin: 0 auto;
       display: block;
+      margin-bottom: 3vh;
     }
     
     @media (max-width: $mobile-width) {
@@ -90,7 +134,7 @@ border-radius: 30px;
 }
 
 .portfolio__slide-main {
-  width: 55%;
+  width: 60%;
     
     @media (max-width: $tablet-width) {
       width: 100%;
@@ -112,7 +156,7 @@ border-radius: 30px;
 color: #3e3066;
 font-weight: 500;
 font-family: $font-pragmatica-extended;
-margin-bottom: 60px;
+margin-bottom: 5vh;
     
     @media (max-width: $tablet-width) {
       margin-bottom: 15px;
@@ -182,11 +226,11 @@ margin-bottom: 60px;
 .portfolio__slide-item {
   @include flex-row;
   align-items: flex-start;
-  font-size: 2.2vh;
-  line-height: 2.5vh;
+  font-size: 1.7vh;
+  line-height: 2vh;
   color: #3e3066;
   font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 1.5vh;
   position: relative;
     
     @media (max-width: $tablet-width) {
@@ -210,10 +254,11 @@ margin-bottom: 60px;
 }
 
 .portfolio__slide-text-group-header {
-  font-size: 4vh;
+  font-size: 3vh;
+  line-height: 3.4vh;
   color: #3e3066;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 2vh;
     
     @media (max-width: $tablet-width) {
       font-size: 20px;
@@ -224,7 +269,8 @@ margin-bottom: 60px;
   @include blue-button;
   margin-left: auto;
   display: block;
-  width: 25%;
+  width: 25vw;
+  margin-top: 4vh;
     
     @media (max-width: $tablet-width) {
       width: 90%;

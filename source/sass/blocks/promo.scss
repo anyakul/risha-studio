@@ -3,7 +3,8 @@
   background-repeat: no-repeat;
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 20px;
+    //padding-bottom: 90px;
+    padding-top: 10vh;
   }
 }
 
@@ -11,28 +12,21 @@
   @include page-width;
   background-repeat: no-repeat;
   background-position: 88% 0;
-  padding-top: 22vh;
-  padding-bottom: 100px;
+ // padding-bottom: 100px;
+ padding-top: 15vh;
   @include flex-row-space;
   align-items: flex-start;
   flex-wrap: wrap;
-
-  @media (max-width: $mobile-width) {
-    padding-bottom: 20px;
-  }
   
 
   @media (max-width: $tablet-width) {
     background-size: 40%;
-    padding-top: 100px;
-    padding-bottom: 30px;
     background-position: 100% 0;
+    padding-top: 100px;
   }
 
   @media (max-width: $mobile-width) {
     background-size: 42%;
-    padding-top: 50px;
-    padding-bottom: 30px;
     background-position: 0 0;
   }
 }
@@ -47,7 +41,6 @@
   font-weight: 500;
 
   @media (max-width: $tablet-width) {
-      width: 90vw;
     br {
       display: none;
     }
@@ -110,7 +103,11 @@
 
 .promo__texts-button {
   margin-bottom: 30px;
-  width: 54%;
+  width: 50%;
+
+  @media (max-width: $tablet-width) {
+    width: 70vw;
+  }
 
   @media (max-width: $mobile-width) {
     width: 100vw;
@@ -129,7 +126,7 @@
 }
 
 .promo__text {
-  font-size: 2vh;
+  font-size: 3vh;
   color: $white-color;
   font-family: "pragmatica extended";
     margin-bottom: 5px;
@@ -146,21 +143,36 @@
   margin-bottom: 20vh;
   margin-right: 4vw;
   width: 100%;
-  margin-top: -85px;
+ margin-top: -20vh;
 
   @media (max-width: $tablet-width) {
     margin-top: 0;
+    margin-top: 2%;
     margin-bottom: 0;
   }
 }
 
+@keyframes go-left-right {   /* назовём анимацию: "go-left-right" */
+    from {
+      left: 0px;               /* от: left: 0px */
+    }
+    to {
+      left: calc(5% - 50px); /* до: left: 100%-50px */
+    }
+  }
+
 .promo__image {
-  width: 31%;
   margin-top: -10vh;
-  padding-right: 12vw;
+  padding-right: 21vw;
+  animation: go-left-right 3s infinite alternate;
+  position: relative;
+  width: 40vw;
 
   @media (max-width: $tablet-width) {
-    margin-top: 15vh;
+    margin-top: 0;
+    padding-right: 0;
+  width: 20vw;
+    
   }
 
   @media (max-width: $mobile-width) {
@@ -190,11 +202,4 @@
 
 .promo__button {
   @include blue-button-promo;
-  margin-top: 60px;
-
-  @media (max-width: $tablet-width) {
-    background-size: 30%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
 }
