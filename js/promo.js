@@ -1,5 +1,5 @@
 // type anything here
-const text = 'Создаю работающие инструменты для Вашего бизнеса<br> в условиях российских реалий';
+const text = document.querySelector('.promo__header').innerHTML;
 
 // this function turns a string into an array
 const createLetterArray = (string) => {
