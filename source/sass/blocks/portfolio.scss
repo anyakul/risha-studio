@@ -2,6 +2,11 @@
   @include section;
   position: relative;
   margin-right: 25vw;
+
+  @media (max-width: $tablet-width) {
+    width:  97vw;
+    margin-right: 0;
+  }
   
   &:before {
     content: "";
@@ -17,9 +22,7 @@
     background-position: 50% 50%;
 
     @media (max-width: $tablet-width) {
-      left: -7%;
-      height: 26vh;
-      top: 72%;
+      display: none;
     }
 
     @media (max-width: $mobile-width) {
@@ -39,16 +42,32 @@
   &--planet {
     right: -15vw;
     bottom: 10vh;
+
+    @media (max-width: $tablet-width) {
+      right: 0;
+      bottom: 10vh;
+    }
   }
   
   &--racket {
     bottom: 15vh;
     left: 5vw;
+
+    @media (max-width: $tablet-width) {
+      right: 5vw;
+      bottom: 30vh;
+      left: auto;
+    }
   }
   
   &--dark-racket {
     top: 15vh;
     right: -12vw;
+
+    @media (max-width: $tablet-width) {
+      top: 15vh;
+      right: 12vw;
+    }
   }
 }
 
@@ -68,17 +87,23 @@
 
 .portfolio__slides {
   @include cancel-list;
+  margin-bottom: 2vh;
 }
 
 .portfolio__slide {
   display: none;
   background-color: #e9e3ea;
-  padding: 3vh 2vw 3vh 2vw; 
+  padding: 3vh 2vw 3vh 5vw; 
 border-radius: 30px;
   
   &--active {
 @include flex-row-space;
   }
+    
+    @media (max-width: $mobile-width) {
+      width: 94vw;
+  padding: 3vh 2vw 3vh 10vw; 
+    }
 }
 
 .portfolio__slide-header-image {
@@ -96,6 +121,7 @@ border-radius: 30px;
       margin: 0 auto;
       display: block;
       margin-bottom: 3vh;
+      width: 30%;
     }
     
     @media (max-width: $mobile-width) {
@@ -236,7 +262,7 @@ border-radius: 30px;
   position: relative;
     
     @media (max-width: $tablet-width) {
-      width: 94%;
+      width: 100%;
     }
   
   &:before {
@@ -244,9 +270,13 @@ border-radius: 30px;
     position: absolute;
     width: 25px;
     height: 25px;
-    left: -30px;
+    left: -3vw;
     top: 0px;
     background-repeat: no-repeat;
+  
+  @media (max-width: $mobile-width) {
+    left: -8vw;
+  }
   }
   
   span {

@@ -12,6 +12,14 @@
     background-image: url("../img/stars.png");
     background-repeat: no-repeat;
     left: 3vw;
+  
+  @media (max-width: $tablet-width) {
+    width: 97vw;
+  }
+  }
+  
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
@@ -24,6 +32,10 @@
   &--dark-racket {
     top: 0vh;
     right: -3vw;
+  
+  @media (max-width: $tablet-width) {
+    right: 3vw;
+  }
   }
 }
 
@@ -46,6 +58,20 @@
 
 .opinion__button-arrows {
   @include slider-buttons;
+  
+  
+  
+  @media (max-width: $tablet-width) {
+    top: -3vh;
+
+    &--right {
+      right: 0;
+    }
+    
+    &--left {
+      left: 0vw;
+    }
+  }
 }
 
 .opinion__list {
@@ -186,6 +212,10 @@
   margin-bottom: 60px;
   width: 75vw;
   margin: 0 auto;
+  
+  @media (max-width: $tablet-width) {
+    width: 95vw;
+  }
 }
 
 .opinion__text {

@@ -8,7 +8,7 @@
   
   @media (max-width: $tablet-width) {
     height: 15vh;
-    padding-top: 10vh;
+   // padding-top: 10vh;
   }
 }
 
@@ -40,7 +40,7 @@
 
     @media (max-width: $mobile-width) {
       img {
-        width: 70%;
+        width: 46%;
       }
     }
 }
@@ -62,7 +62,7 @@
     position: absolute;
     right: 1vw;
     top: 2%;
-    top: 10vh;
+    top: 3vh;
     z-index: 90;
   }
 }

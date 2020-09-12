@@ -7,6 +7,10 @@
   margin-top: 10vh;
   padding-top: 10vh;
  // background-position: 0 -10vw;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 5vh;
+  }
 }
 
 .about-me__wrapper {
@@ -21,8 +25,8 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   width: 36%;
-  width: 50vh;
-  height: 50vh;
+  width: 35vh;
+  height: 37vh;
   overflow: hidden;
   border-radius: 50%;
   background-size: cover;
@@ -42,7 +46,7 @@
   width: 55%;
   margin-bottom: 4vh;
   @media (max-width: $tablet-width) {
-    width: 55vw;
+    width: 57vw;
   }
 
   @media (max-width: $mobile-width) {
@@ -64,6 +68,12 @@
 
 .about-me__text {
   @include text;
+  
+  br {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .about-me__experience {

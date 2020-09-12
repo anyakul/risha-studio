@@ -5,6 +5,10 @@
   z-index: 10;
   padding-top: 18.6vh;
   
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+  }
+  
   &:before {
     content: "";
     width: 70%;
@@ -17,11 +21,15 @@
     background-size: cover;
     left: 7vw;
     z-index: -1;
+  
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
   }
   
   &:after {
     content: "";
-    width: 100%;
+    width: 93vw;
     height: 40%;
     top: 3vh;
     left: -15vw;
@@ -50,6 +58,10 @@
     background-repeat: no-repeat;
     left: 7vw;
     z-index: -1;
+  
+    @media (max-width: $tablet-width) {
+      left: 0;
+    }
   }
 }
 
@@ -78,7 +90,7 @@
  //  background-color: rgba(255, 255, 255, 0.5);
   
   @media(max-width: $tablet-width) {
-    width: 44vw;
+    width: 46vw;
   }
 
   &:nth-child(3) {
@@ -202,6 +214,12 @@
 
 .services__item-text {
   @include item-text;
+  
+  @media (max-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .services__item-button {

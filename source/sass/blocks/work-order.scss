@@ -1,10 +1,11 @@
 .work-order {
   @include section;
   position: relative;
+  padding-left: 7vw;
   
   &:before {
     content: "";
-    width: 120%;
+    width: 93vw;
     height: 100%;
     top: 3vh;
     position: absolute;
@@ -28,12 +29,6 @@
    // background-position: 100%;
 
     @media (max-width: $tablet-width) {
-      left: -7%;
-      height: 26vh;
-      top: 72%;
-    }
-
-    @media (max-width: $mobile-width) {
       display: none;
     }
   }
@@ -71,8 +66,14 @@
   margin-right: 5vw;
   
   @media (max-width: $tablet-width) {
-    width: 100%;
+    width: 53%;
+    margin: 0 auto;
     padding-bottom: 50px;
+  }
+  
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding-bottom: 5vh;
   }
 }
 
@@ -91,6 +92,10 @@
 
 .work-order__form-list {
   @include cancel-list;
+  
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .work-order__form-item {
@@ -120,10 +125,15 @@
   @include text;
   padding: 3vh 3vw;
   height: 7vh;
-  width: 65%;
+  width: 60%;
   border: none;
 border-radius: 10px;
 color: #bfbebe;
+  
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 3vh 8vw;
+  }
 }
 
 .work-order__form-button {
@@ -159,12 +169,6 @@ color: #bfbebe;
 border: none;
   
   @media (max-width: $tablet-width) {
-    width: 45%;
-  }
-
-  @media (max-width: $mobile-width) {
-    font-size: 16px;
-    line-height: 24px;
     width: 100%;
   }
 }
@@ -175,6 +179,10 @@ border: none;
   
   @media (max-width: $tablet-width) {
     display: block;
+  
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
   }
 }
 
