@@ -1,5 +1,10 @@
 .contacts {
   @include section;
+  position: relative;
+  z-index: 0;
+  background-size: 95%;
+  background-position: 0 0;
+    background-image: url("../img/contacts-bg-flying.png")
 }
 
 .contacts__wrapper {
@@ -13,34 +18,57 @@
 
 .contacts__group {
   width: 70%;
-  margin: 0 auto;
+  //margin: 0 auto;
   
   @media(max-width: $tablet-width) {
     width: 100%;
   }
 }
 
+.contacts__image {
+  position: absolute;
+  top: 0vh;
+ z-index:1;
+  left: -15vw;
+  position: absolute;
+} 
+
 .contacts__item {
-padding-top: 20px;
-  padding: 20px 2% 20px 2%;
+  padding: 2vh 3%;
   border-radius: 10px;
+  text-align: center;
+  position: relative;
   background-image: linear-gradient(170deg, #825482 0%, #da6d50 100%);
+  
+  &:before {
+    content: "";
+    width: 24%;
+    height: 44%;
+    bottom: -22%;
+    right: -10%;
+    z-index: 30;
+    position: absolute;
+    background-image: url("../img/contacts-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }
 
 .contacts__item-header {
-  font-size: 3vh;
+text-align: nenter;
+  font-size: 2.6vh;
   color: #ffffff;
   font-family: $font-pragmatica-extended;
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
 }
 
 .contacts__item-text {
-  font-size: 2.8vh;
+text-align: nenter;
+  font-size: 2.6vh;
   color: #ffffff;
-  font-family: $font-pragmatica-extended;
   margin-bottom: 10px;
   font-weight: 300;
-  margin-right: 30px;
+  margin-right: 2vh;
 }
 
 .contacts__item-image {
@@ -56,7 +84,9 @@ padding-top: 20px;
   @include green-button;
   display: block;
   margin-left: auto;
-  width: 20%;
+  width: 30%;
+  position: relative;
+  z-index: 30;
   text-align: center;
   padding: 15px;
   margin-bottom: -50px;

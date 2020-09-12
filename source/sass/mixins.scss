@@ -1,5 +1,5 @@
 @mixin page-width {
-  width: 80vw;
+  width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
   //max-width: 1500px;
@@ -54,7 +54,7 @@ $button-color: #EE3769;
   border-radius: 2.6em;
   height:$height;
   width:$width;
-  padding: 2vh;
+  padding: 2vh 2vw;
   outline: none;
   overflow: hidden;
   color: $blue-color;
@@ -63,7 +63,9 @@ $button-color: #EE3769;
   line-height: 250%;
   z-index: 1;
   position: relative;
-  font-size: 2vh;
+  position: absolute;
+  font-size: 2.8vh;
+  line-height: 3.6vh;
   border: 1px solid $blue-color;
   
   &::before{
@@ -96,12 +98,12 @@ $button-color: #EE3769;
 
 
 @mixin section-header {
-  font-size: 3vh;
+  font-size: 3.2vh;
   color: #ffffff;
   font-weight: 500;
   font-family: $font-pragmatica-extended;
   text-decoration: underline;
-  margin-bottom: 5vh;
+  margin-bottom: 4.7vh;
   height: 3.5vh;
 }
 
@@ -110,15 +112,17 @@ $button-color: #EE3769;
   color: $red-color;
   font-weight: 300;
   line-height: 3.2vh;
+  font-style: italic;
  height: 3.2vh;
   font-family: $font-pragmatica-extended;
 }
 
 @mixin item-header {
   color: $blue-color;
-  font-weight: 500;
-  font-family: "Pragmatica Extended";
-  font-size: 3vh;
+  font-weight: 600;
+  font-family: $font-pragmatica-extended;
+  font-size: 2.7vh;
+  line-height: 3.4vh;
 
   @media (max-width: $mobile-width) {
     font-size: 2.8vh;
@@ -126,7 +130,7 @@ $button-color: #EE3769;
 }
 
 @mixin item-text {
-  font-size: 2.6vh;
+  font-size: 2.5vh;
   line-height: 3vh;
   color: #fa868f;
   font-weight: 500;
@@ -138,14 +142,15 @@ $button-color: #EE3769;
 }
 
 @mixin blue-button {
-  font-size: 2.3vh;
+  font-size: 2vh;
+  line-height: 3.6vh;
   color: $white-color;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $blue-color;
   text-align: center;
   border-radius: 30px;
-  padding: 2vh 3%;
+  padding: 1.4vh 5%;
 
   @media (max-width: $tablet-width) {
     width: 65%;
@@ -180,13 +185,25 @@ $button-color: #EE3769;
   }
 }
 
-@mixin text {
-  font-size: 2.8vh;
-  line-height: 3vh;
-  color: #ffffff;
-  font-weight: 500;
+@mixin text-header {
+  font-size: 2.2vh;
+  line-height: 2.8vh;
+  color: $white-color;
   font-family: $font-pragmatica-extended;
-  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+@mixin text {
+  font-size: 2.4vh;
+  line-height: 2.8vh;
+  color: $white-color;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
 }
 
 @mixin green-button {
@@ -196,9 +213,10 @@ $button-color: #EE3769;
   border: 1px solid #ffffff;
   font-size: 2vh;
   line-height: 3vh;
+  text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding: 1vh 4%;
+  padding: 1vh 3%;
 
   @media (max-width: $mobile-width) {
     font-size: 1.8vh;
@@ -211,14 +229,12 @@ $button-color: #EE3769;
   filter: drop-shadow(4.95px 4.95px 0px rgba(0,0,0,0.05));
   background-image: linear-gradient(90deg, #49d0a8 0%, #43b5af 100%);
   border: 1px solid #ffffff;
-  color: #ffffff;
-  padding: 15px 4%;
-  
-    font-size: 2.5vh;
-  line-height: 3vh;
+  font-size: 2.4vh;
+line-height: 2.5vh;
 color: #ffffff;
 text-align: center;
-  padding: 10px 65px 10px 25px;
+  background-color: $blue-color;
+  padding: 2vh 5vw 2vh 1.5vw;
   border-radius: 20px;
   text-transform: uppercase;
   position: relative;
@@ -253,8 +269,8 @@ text-align: center;
   background-image: linear-gradient(170deg, #825482 0%, #da6d50 100%);
   border: 1px solid #ffffff;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   text-decoration: none;
 }
 
@@ -281,7 +297,7 @@ text-align: center;
     }
   
   &--left {
-    left: -6vw;
+    left: -7vw;
     background-image: url("../img/arrow-left.png");
     
     @media (max-width: $tablet-width) {
@@ -300,12 +316,12 @@ text-align: center;
 }
 
 @mixin blue-button-in-form {
-  font-size: 2vh;
+  font-size: 2.4vh;
 line-height: 2.5vh;
 color: #ffffff;
 text-align: center;
   background-color: $blue-color;
-  padding: 1vh 9vh 1vh 2vh;
+  padding: 2vh 5vw 2vh 1.5vw;
   border-radius: 20px;
   text-transform: uppercase;
   position: relative;
@@ -331,7 +347,7 @@ text-align: center;
 }
 
 @mixin item-blue-button {
-  font-size: 2vh;
+  font-size: 2.2vh;
   color: $white-color;
   text-transform: uppercase;
   text-decoration: none;

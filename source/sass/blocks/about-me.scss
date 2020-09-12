@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   margin-top: 10vh;
   padding-top: 10vh;
+ // background-position: 0 -10vw;
 }
 
 .about-me__wrapper {
@@ -20,8 +21,8 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   width: 36%;
-  width: 22vw;
-  height: 22vw;
+  width: 50vh;
+  height: 50vh;
   overflow: hidden;
   border-radius: 50%;
   background-size: cover;
@@ -38,7 +39,8 @@
 }
 
 .about-me__introduce {
-  width: 40vw;
+  width: 55%;
+  margin-bottom: 4vh;
   @media (max-width: $tablet-width) {
     width: 55vw;
   }
@@ -51,8 +53,8 @@
 }
 
 .about-me__header {
-  font-size: 2.3vh;
-  font-family: $font-pragmatica-extended;
+  @include text-header;
+  text-transform: uppercase;
   margin-bottom: 25px;
 }
 
@@ -61,14 +63,12 @@
 }
 
 .about-me__text {
-  font-size: 2vh;
-  line-height: 3vh;
-  color: #ffffff;
+  @include text;
 }
 
 .about-me__experience {
   text-align: right;
-  width: 40vw;
+  width: 100%;
   margin-left: auto;
   position: relative;
 
@@ -96,9 +96,10 @@
 }
 
 .about-me__button {
-  @include blue-button-promo;
+  @include blue-button;
   margin-top: 15px;
-  width: 15%;
+  width: 20%;
+  padding: 1.6vh 3.5vh;
 
   @media (max-width: $mobile-width) {
     margin-left: 0;

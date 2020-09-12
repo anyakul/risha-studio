@@ -75,7 +75,7 @@
 }
 
 .opinion__item {
-  width: 19vw;
+  width: 24%;
   border-radius: 50px;
   padding: 0 1vw 5vh 1vw;
   background-color: #bdaec3;
@@ -138,8 +138,8 @@
 }
 
 .opinion__item-header {
-  font-size: 2.2vh;
-  line-height: 2.5vh;
+  font-size: 2.4vh;
+  line-height: 2.8vh;
   color: #3e3066;
   font-weight: 500;
   font-family: $font-pragmatica-extended;
@@ -148,7 +148,7 @@
 }
 
 .opinion__item-text {
-  font-size: 2.2vh;
+  font-size: 2vh;
   line-height: 2.4vh;
   color: #3e3066;
   font-weight: 500;
@@ -184,15 +184,15 @@
 .opinion__text-button {
   @include flex-row-space;
   margin-bottom: 60px;
-  width: 80vw;
+  width: 75vw;
   margin: 0 auto;
 }
 
 .opinion__text {
-  font-size: 3vh;
+  font-size: 2.4vh;
   color: #ffffff;
   font-weight: 500;
-  width: 62%;
+  width: 61%;
   
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -202,11 +202,10 @@
 
 .opinion__button {
   @include violet-button;
-  font-size: 3vh;
-  width: 37%;
+  font-size: 2.6vh;
+  width: 38%;
   
   @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
-

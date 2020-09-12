@@ -4,7 +4,7 @@
   
   &:before {
     content: "";
-    width: 100%;
+    width: 120%;
     height: 100%;
     top: 3vh;
     position: absolute;
@@ -15,15 +15,16 @@
   
   &:after {
     content: "";
-    width: 50vw;
+    width: 62vw;
     height: 30vh;
     z-index: 1;
-    left: 45vw;
-    bottom: 0;
+    left: 42%;
+    bottom: 15vh;
     position: absolute;
-    background-image: url("../img/price-clouds.png");
+    background-image: url("../img/clouds.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
    // background-position: 100%;
 
     @media (max-width: $tablet-width) {
@@ -46,8 +47,9 @@
 }
 
 .work-order__order {
-  width: 45vw;
+  width: 50%;
   padding-left: 5%;
+  z-index: 2;
   
   @media (max-width: $tablet-width) {
     padding-left: 0;
@@ -57,18 +59,75 @@
 
 
 .work-order__form-wrapper {
-  width: 35vw;
+  width: 34%;
   padding-top: 10vh;
   border-radius: 10px;
+  margin-top: 5vh;
   background-image: linear-gradient(170deg, #825482 0%, #da6d50 100%);
-  padding: 2vh 2vw;
+  padding: 2vh 2%;
   margin-top: 20px;
-  padding-bottom: 20vh;
+  padding-bottom: 11vh;
+  position: relative;
+  margin-right: 5vw;
   
   @media (max-width: $tablet-width) {
     width: 100%;
     padding-bottom: 50px;
   }
+}
+
+.work-order__form-header {
+  @include text;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.work-order__form-text {
+  font-size: 1.8vh;
+  line-height: 2.5vh;
+  color: #ffffff;
+  margin-bottom: 4vh;
+}
+
+.work-order__form-list {
+  @include cancel-list;
+}
+
+.work-order__form-item {
+  @include flex-row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 0.5vh;
+
+  i {
+    width: 26px;
+    height: 45px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -26px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    float: left;
+    left: 0.5vw;
+  }
+}
+
+.work-order__form-input {
+  @include text;
+  padding: 3vh 3vw;
+  height: 7vh;
+  width: 65%;
+  border: none;
+border-radius: 10px;
+color: #bfbebe;
+}
+
+.work-order__form-button {
+  @include blue-button-in-form;
 }
 
 .work-order__form {
@@ -78,21 +137,19 @@
 .work-order__form-header {
   @include text;
   margin-bottom: 30px;
-  font-size: 2.6vh;
+  font-size: 2.2vh;
   line-height: 3vh;
+  text-align: center;
 }
 
 .work-order__form-text {
-  font-size: 2.4vh;
-  line-height: 3vh;
+  font-size: 1.8vh;
+  line-height: 2.5vh;
   color: #ffffff;
   margin-bottom: 3vh;
-  font-size: 2.3vh;
-  line-height: 3vh;
 }
 
 .work-order__form-input {
-  padding: 15px;
   width: 65%;
 border-radius: 10px;
 margin-bottom: 25px;
@@ -114,8 +171,6 @@ border: none;
 
 .work-order__form-button {
   @include green-button-in-form;
-  margin-bottom: 15px;
-  width: 75%;
   text-align: center;
   
   @media (max-width: $tablet-width) {
@@ -138,12 +193,28 @@ border: none;
   }
 }
 
+.work-order__item-image-planet,
+.work-order__item-image-racket {
+  position: absolute;
+  
+}
+
+.work-order__item-image-planet {
+  top: 40%;
+  right: 10%;
+}
+
+.work-order__item-image-racket {
+  top: 40%;
+  left: -5%;
+}
+
 .work-order__item {
   font-size: 2.6vh;
   line-height: 3vh;
   color: #ffffff;
   font-weight: 500;
-  margin-bottom: 45px;
+  margin-bottom: 5vh;
   position: relative;
   
   @media (max-width: $tablet-width) {
