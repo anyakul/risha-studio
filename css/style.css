@@ -363,8 +363,11 @@ body {
   padding-left: 10vw;
   padding-bottom: 100%;
   background-size: cover;
+  opacity: 1;
   padding-bottom: 3vh;
   padding-top: 16vh; }
+  .main__section--active {
+    opacity: 1; }
   @media (max-width: 1199px) {
     .main__section {
       padding-left: 3vw;
@@ -408,6 +411,7 @@ html, body {
   width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
+  max-width: 1300px;
   width: 83vw;
   height: 10vh;
   padding-bottom: 3vh;
@@ -532,6 +536,7 @@ html, body {
   width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
+  max-width: 1300px;
   background-repeat: no-repeat;
   background-position: 88% 0;
   padding-top: 10vh;
@@ -812,6 +817,7 @@ html, body {
   width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
+  max-width: 1300px;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,6 +1011,7 @@ html, body {
   width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
+  max-width: 1300px;
   padding-top: 0;
   position: relative;
   z-index: 20; }
@@ -1200,7 +1207,8 @@ html, body {
 .page__wrapper {
   width: 78vw;
   height: 80vh;
-  padding-bottom: 5vh; }
+  padding-bottom: 5vh;
+  max-width: 1300px; }
   @media (max-width: 1199px) {
     .page__wrapper {
       width: 93vw;
@@ -1217,8 +1225,8 @@ html, body {
     width: 72vw;
     height: 35vh;
     z-index: 1;
-    bottom: 2vh;
-    left: -7vw;
+    bottom: -2vh;
+    left: -10%;
     position: absolute;
     background-image: url("../img/price-clouds.png");
     background-repeat: no-repeat;
@@ -1240,6 +1248,7 @@ html, body {
   width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
+  max-width: 1300px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1362,7 +1371,7 @@ html, body {
   text-decoration: none;
   padding: 1vh 3%;
   display: block;
-  width: 33vw;
+  width: 80%;
   text-align: center;
   margin-left: 4vw; }
   @media (max-width: 767px) {
@@ -1548,8 +1557,7 @@ html, body {
       width: 100%; } }
 
 .portfolio {
-  position: relative;
-  margin-right: 25vw; }
+  position: relative; }
   @media (max-width: 1199px) {
     .portfolio {
       width: 97vw;
@@ -1605,7 +1613,8 @@ html, body {
 .portfolio__wrapper {
   width: 78vw;
   height: 80vh;
-  padding-bottom: 5vh; }
+  padding-bottom: 5vh;
+  max-width: 1300px; }
   @media (max-width: 1199px) {
     .portfolio__wrapper {
       width: 93vw;
@@ -1661,7 +1670,7 @@ html, body {
 .portfolio__slide {
   display: none;
   background-color: #e9e3ea;
-  padding: 3vh 2vw 3vh 5vw;
+  padding: 3vh 2vw 2vh 2vw;
   border-radius: 30px; }
   .portfolio__slide--active {
     display: -webkit-box;
@@ -1910,7 +1919,6 @@ html, body {
       margin: 0 auto; } }
 
 .opinion {
-  margin-right: 15vw;
   position: relative; }
   .opinion:before {
     content: "";
@@ -1932,6 +1940,7 @@ html, body {
   width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
+  max-width: 1300px;
   position: relative; }
   @media (max-width: 1199px) {
     .opinion__wrapper {
@@ -2215,11 +2224,11 @@ html, body {
     left: 7vw; }
   .work-order:after {
     content: "";
-    width: 62vw;
-    height: 30vh;
+    width: 75%;
+    height: 28%;
     z-index: 1;
     left: 42%;
-    bottom: 15vh;
+    bottom: 17vh;
     position: absolute;
     background-image: url("../img/clouds.png");
     background-repeat: no-repeat;
@@ -2233,6 +2242,7 @@ html, body {
   width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
+  max-width: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2265,6 +2275,12 @@ html, body {
     .work-order__order {
       padding-left: 0;
       width: 89%; } }
+  .work-order__order .work-order__item-image-racket--one {
+    right: 5%;
+    top: 5%; }
+  .work-order__order .work-order__item-image-racket--two {
+    right: 10%;
+    bottom: 0; }
 
 .work-order__form-wrapper {
   width: 34%;
@@ -2512,8 +2528,9 @@ html, body {
   right: 10%; }
 
 .work-order__item-image-racket {
-  top: 40%;
-  left: -5%; }
+  top: 60%;
+  left: -5%;
+  z-index: 40; }
 
 .work-order__item {
   font-size: 2.6vh;
@@ -2565,7 +2582,8 @@ html, body {
 .contacts__wrapper {
   width: 78vw;
   height: 80vh;
-  padding-bottom: 5vh; }
+  padding-bottom: 5vh;
+  max-width: 1300px; }
   @media (max-width: 1199px) {
     .contacts__wrapper {
       width: 93vw;

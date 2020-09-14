@@ -22,8 +22,3 @@ function scrollHorizontally(e) {
           // IE 6/7/8
           document.querySelector('.main__wrapper').attachEvent("onmousewheel", scrollHorizontally);
       }
-
-
-
-console.log(main);
-console.log(scrollHorizontally(e));
