@@ -298,7 +298,7 @@ text-align: center;
     }
   
   &--left {
-    left: -7vw;
+    left: -5vw;
     background-image: url("../img/arrow-left.png");
     
     @media (max-width: $tablet-width) {
@@ -307,7 +307,7 @@ text-align: center;
   }
   
   &--right {
-    right: -8vw;
+    right: -10vw;
     background-image: url("../img/arrow-right.png");
     
     @media (max-width: $tablet-width) {
