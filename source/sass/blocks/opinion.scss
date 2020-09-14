@@ -209,7 +209,7 @@
 .opinion__text-button {
   @include flex-row-space;
   margin-bottom: 60px;
-  width: 75vw;
+  width: 100%;
   margin: 0 auto;
   
   @media (max-width: $tablet-width) {
