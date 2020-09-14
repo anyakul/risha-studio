@@ -359,7 +359,7 @@ body {
       background-repeat: no-repeat; } }
 
 .main__section {
-  margin-right: 8vw;
+  margin-right: 4vw;
   padding-left: 10vw;
   padding-bottom: 100%;
   background-size: cover;
@@ -1642,13 +1642,13 @@ html, body {
       top: 130px;
       background-size: cover; } }
   .portfolio__button-arrows--left {
-    left: -7vw;
+    left: -5vw;
     background-image: url("../img/arrow-left.png"); }
     @media (max-width: 1199px) {
       .portfolio__button-arrows--left {
         left: 10px; } }
   .portfolio__button-arrows--right {
-    right: -8vw;
+    right: -10vw;
     background-image: url("../img/arrow-right.png"); }
     @media (max-width: 1199px) {
       .portfolio__button-arrows--right {
@@ -1853,7 +1853,7 @@ html, body {
   line-height: 3.4vh;
   color: #3e3066;
   font-weight: 500;
-  margin-bottom: 1vh; }
+  margin-bottom: 2vh; }
   @media (max-width: 1199px) {
     .portfolio__slide-text-group-header {
       font-size: 20px; } }
@@ -1995,13 +1995,13 @@ html, body {
       top: 130px;
       background-size: cover; } }
   .opinion__button-arrows--left {
-    left: -7vw;
+    left: -5vw;
     background-image: url("../img/arrow-left.png"); }
     @media (max-width: 1199px) {
       .opinion__button-arrows--left {
         left: 10px; } }
   .opinion__button-arrows--right {
-    right: -8vw;
+    right: -10vw;
     background-image: url("../img/arrow-right.png"); }
     @media (max-width: 1199px) {
       .opinion__button-arrows--right {
