@@ -1,7 +1,6 @@
 .portfolio {
   @include section;
   position: relative;
-  margin-right: 25vw;
 
   @media (max-width: $tablet-width) {
     width:  97vw;
@@ -93,7 +92,7 @@
 .portfolio__slide {
   display: none;
   background-color: #e9e3ea;
-  padding: 3vh 2vw 3vh 5vw; 
+  padding: 3vh 2vw 2vh 2vw; 
 border-radius: 30px;
   
   &--active {

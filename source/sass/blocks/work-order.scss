@@ -16,11 +16,11 @@
   
   &:after {
     content: "";
-    width: 62vw;
-    height: 30vh;
+    width: 75%;
+    height: 28%;
     z-index: 1;
     left: 42%;
-    bottom: 15vh;
+    bottom: 17vh;
     position: absolute;
     background-image: url("../img/clouds.png");
     background-repeat: no-repeat;
@@ -49,6 +49,19 @@
   @media (max-width: $tablet-width) {
     padding-left: 0;
     width: 89%;
+  }
+  
+  .work-order__item-image-racket {
+    &--one {
+      right: 5%;
+      top: 5%;
+    }
+    
+    
+    &--two {
+      right: 10%;
+      bottom: 0;
+    }
   }
 }
 
@@ -213,8 +226,9 @@ border: none;
 }
 
 .work-order__item-image-racket {
-  top: 40%;
+  top: 60%;
   left: -5%;
+  z-index: 40;
 }
 
 .work-order__item {
