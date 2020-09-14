@@ -2176,7 +2176,7 @@ html, body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 60px;
-  width: 75vw;
+  width: 100%;
   margin: 0 auto; }
   @media (max-width: 1199px) {
     .opinion__text-button {
