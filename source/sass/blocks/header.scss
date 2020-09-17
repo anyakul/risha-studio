@@ -1,10 +1,13 @@
 .header {
   z-index: 80;
-  padding-left: 10vw;
-  width: 100vw;
-  height: 10vh;
+  padding-left: calc(35*var(--rem));
+ // width: 100vw;
+  //height: 10vh;
   position: fixed;
   z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
   
   @media (max-width: $tablet-width) {
     height: 15vh;
@@ -14,21 +17,21 @@
 
 .header__wrapper {
   @include page-width;
-  width: 83vw;
+  width: 100%;
   height: 10vh;
  // width: 90vw;
   padding-bottom: 3vh;
   padding-top: 3vh;
   vertical-align: middle;
-  @include flex-row;
+  @include flex-row-space;
   align-items: flex-start;
 }
 
 .header__logo-link {
-  width: 31%;
+  width: 23%;
   
   img {
-    width: 80%;
+    width: 95%;
   }
 
     @media (max-width: $tablet-width) {
@@ -46,7 +49,7 @@
 }
 
 .header__nav {
-  width: 69%;
+  width: 70%;
 }
 
 .header__button {
@@ -69,6 +72,7 @@
 
 .header__nav {
 //  position: fixed;
+margin-right: 3%;
 
   &--active {
     @media (max-width: $tablet-width) {
@@ -124,7 +128,7 @@
 .header__menu-item {
   a {
     color: $white-color;
-    font-size: 3vh;
+    font-size: calc(7.5*var(--rem));;
     text-transform: lowercase;
     text-decoration: none;
   }

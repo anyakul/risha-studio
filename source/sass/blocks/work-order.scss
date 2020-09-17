@@ -1,7 +1,6 @@
 .work-order {
   @include section;
   position: relative;
-  padding-left: 7vw;
   
   &:before {
     content: "";
@@ -16,11 +15,11 @@
   
   &:after {
     content: "";
-    width: 75%;
-    height: 28%;
+    width: 67%;
+    height: 26%;
     z-index: 1;
-    left: 42%;
-    bottom: 17vh;
+    left: 50%;
+    bottom: calc(4.5*var(--rem);;
     position: absolute;
     background-image: url("../img/clouds.png");
     background-repeat: no-repeat;
@@ -42,7 +41,7 @@
 }
 
 .work-order__order {
-  width: 50%;
+  width: 52%;
   padding-left: 5%;
   z-index: 2;
   
@@ -67,16 +66,14 @@
 
 
 .work-order__form-wrapper {
-  width: 34%;
+  width: 40%;
   padding-top: 10vh;
   border-radius: 10px;
-  margin-top: 5vh;
   background-image: linear-gradient(170deg, #825482 0%, #da6d50 100%);
   padding: 2vh 2%;
   margin-top: 20px;
-  padding-bottom: 11vh;
+  padding-bottom: 13vh;
   position: relative;
-  margin-right: 5vw;
   
   @media (max-width: $tablet-width) {
     width: 53%;
@@ -137,7 +134,7 @@
 .work-order__form-input {
   @include text;
   padding: 3vh 3vw;
-  height: 7vh;
+  height: 6vh;
   width: 60%;
   border: none;
 border-radius: 10px;
@@ -166,18 +163,16 @@ color: #bfbebe;
 }
 
 .work-order__form-text {
-  font-size: 1.8vh;
-  line-height: 2.5vh;
+  font-size: calc(4.5*var(--rem);
+  line-height: calc(6*var(--rem);
   color: #ffffff;
   margin-bottom: 3vh;
 }
 
 .work-order__form-input {
-  width: 65%;
+  width: 100%;
 border-radius: 10px;
 margin-bottom: 25px;
-font-size: 2.4vh;
-line-height: 3vh;
 color: #bfbebe;
 border: none;
   

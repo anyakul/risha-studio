@@ -9,15 +9,14 @@
   
   &:before {
     content: "";
-    width: 35vw;
-    height: 80vh;
+    width: 36vw;
+    height: 52vh;
     z-index: 1;
     left: -12vw;
     top: -28vh;
     position: absolute;
     background-image: url("../img/bg-portfolio.png");
     background-repeat: no-repeat;
-    background-size: 50%;
     background-position: 50% 50%;
 
     @media (max-width: $tablet-width) {
@@ -72,6 +71,7 @@
 
 .portfolio__wrapper {
   @include page-width;
+  width: 77vw;
 }
 
 .portfolio__slides-wrapper {
@@ -92,7 +92,7 @@
 .portfolio__slide {
   display: none;
   background-color: #e9e3ea;
-  padding: 3vh 2vw 2vh 2vw; 
+  padding: 2% 2vw 2% 2vw; 
 border-radius: 30px;
   
   &--active {
@@ -106,7 +106,7 @@ border-radius: 30px;
 }
 
 .portfolio__slide-header-image {
-  width: 30%;
+  width: 38%;
     
     @media (max-width: $tablet-width) {
       width: 100%;
@@ -114,7 +114,7 @@ border-radius: 30px;
 }
 
 .portfolio__slide-image {
-  width: 100%;
+  width: calc(90*var(--rem);
     
     @media (max-width: $tablet-width) {
       margin: 0 auto;
@@ -179,7 +179,7 @@ border-radius: 30px;
 }
 
 .portfolio__slide-header {
-  font-size: 3.5vh;
+  font-size: calc(5*var(--rem));
   color: #3e3066;
   font-weight: 500;
   font-family: $font-pragmatica-extended;
@@ -193,6 +193,7 @@ border-radius: 30px;
 .portfolio__slide-text-group {
   @include flex-row;
   align-items: flex-start;
+  margin-bottom: calc(3.5*var(--rem);
   
   &--purpose {
       @media (max-width: $tablet-width) {
@@ -203,6 +204,8 @@ border-radius: 30px;
       width: 100%;
     }
     .portfolio__slide-item {
+      font-weight: 300;
+
       &:before {
         background-image: url("../img/icon-purpose-item.png");
         }
@@ -219,6 +222,8 @@ border-radius: 30px;
     }
 
     .portfolio__slide-item {
+      font-weight: 300;
+
       &:before {
         background-image: url("../img/icon-task-item.png");
       }
@@ -253,10 +258,9 @@ border-radius: 30px;
 .portfolio__slide-item {
   @include flex-row;
   align-items: flex-start;
-  font-size: 2vh;
-  line-height: 2.3vh;
+  font-size: calc(4*var(--rem));
+  line-height: calc(4.5*var(--rem);
   color: #3e3066;
-  font-weight: 300;
   margin-bottom: 1vh;
   position: relative;
     
@@ -285,11 +289,11 @@ border-radius: 30px;
 }
 
 .portfolio__slide-text-group-header {
-  font-size: 3.5vh;
-  line-height: 3.4vh;
+  font-size: calc(5.5*var(--rem));
+  line-height: calc(5*var(--rem);
   color: #3e3066;
   font-weight: 500;
-  margin-bottom: 2vh;
+  margin-bottom: 2.5vh;
     
     @media (max-width: $tablet-width) {
       font-size: 20px;
@@ -300,6 +304,7 @@ border-radius: 30px;
   @include blue-button;
   margin-left: auto;
   display: block;
+  padding: 1% 5%;
   width: 30vw;
   margin-top: 2vh;
     

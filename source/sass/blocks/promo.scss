@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: 88% 0;
  // padding-bottom: 100px;
- padding-top: 10vh;
+ padding-top: 4%;
   @include flex-row-space;
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -37,8 +37,9 @@
 }
 
 .promo__header {
-  font-size: 4.9vh;
-  line-height: 6.7vh;
+  font-size: calc(9*var(--rem));
+  line-height: calc(14*var(--rem));
+ // : 5.2rem;
   color: #fa868f;
   font-weight: 500;
   font-family: "Pragmatica";
@@ -46,7 +47,7 @@
   font-weight: 500;
 
   @media (max-width: $mobile-width) {
-  font-size: 3vh;
+  font-size: 3vmin;
     br {
       display: none;
     }
@@ -100,31 +101,28 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    font-size: 3vh;
-    line-height: 5vh;
+    font-size: 3vmin;
+    line-height: 5vmin;
     text-align: center;
-    line-height: 28px;
   }
 }
 
 .promo__texts-button {
   margin-bottom: 30px;
- // width: 50%;
-  min-width: 66%;
 
   @media (max-width: $tablet-width) {
-    width: 60vw;
+    width: 60vmax;
     margin-bottom: 0;
     order: 1;
   }
 
   @media (max-width: $mobile-width) {
-    width: 100vw;
+    width: 100vmin;
   }
 }
 
 .promo__texts {
-  margin-bottom: 6.5vh;
+  margin-bottom: 6.5vmin;
     width: 100%;
 
   @media (max-width: $tablet-width) {
@@ -139,16 +137,16 @@
 
 .promo__text {
   @include text-header;
-  margin-bottom: 0.5vh;
+  margin-bottom: 0.5vmin;
 }
 
 .promo__texts-right {
-  margin-bottom: 15vh;
-  margin-right: 4vw;
+  margin-bottom: 15vmin;
+  margin-right: 4vmax;
   width: 100%;
   position: absolute;
-  bottom: 0vh;
-  margin-right: 25vw;
+  bottom: 2%;
+  margin-right: 40vmax;
   //right: -60vw;
 
   @media (max-width: $tablet-width) {
@@ -179,17 +177,17 @@
   }
 
 .promo__image {
-  margin-top: -10vh;
+  margin-top: calc(-20*var(--rem));
   animation: go-left-right 3s infinite alternate;
   position: relative;
-  padding-right: 5%;
-  width: 45%;
-  margin-left: -100vw;
+  padding-right: 9%;
+  width: 46%;
+  width: calc(165*var(--rem));
+  margin-left: -64%;
 
   @media (max-width: $tablet-width) {
   margin-top: -30vh;
 //    padding-right: 0;
-  width: 33%;
   margin-left: 0;
   order: 3;
   padding-right: 0;
@@ -205,8 +203,7 @@
 }
 
 .promo__text-right {
-  font-size: 2vh;
-  line-height: 3vh;
+  font-size: calc(4*var(--rem));
   color: $white-color;
   font-family: "pragmatica extended";
   text-align: right;
@@ -224,6 +221,6 @@
   
 
   @media (max-width: $tablet-width) {
-    margin-top:  80px;
+    margin-top:  80vmin;
   }
 }

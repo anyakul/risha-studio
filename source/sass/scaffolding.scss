@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -19,9 +20,9 @@
 body {
   font-family: $font-pragmatica;
   //background-color: #2c2454;
-  height: 100vh;
+  height: 100%;
  // overflow-y: scroll;
-//  overflow-x: scroll;
+  overflow: hidden;
   @media (max-width: $tablet-width) {
     display: block;
     height: auto;
@@ -32,7 +33,7 @@ body {
 
 .main {
  // overflow: auto;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main__wrapper {
@@ -57,14 +58,19 @@ body {
 }
 
 .main__section {
-  margin-right: 4vw;
-  padding-left: 10vw;
+  margin-right: calc(12*var(--rem));
+  padding-left: calc(34*var(--rem));
+  -header-height: calc(35*var(--rem));
+  margin-top: calc(17vh - var(--header-height));
   padding-bottom: 100%;
-  // height: 80vh;
+//  max-height: 80vh;
   background-size: cover;
   opacity: 1;
+  display: flex;
+  flex-wrap: nowrap;
   padding-bottom: 3vh;
-  padding-top: 16vh;
+  padding-top: calc(30vh - var(--header-height));
+  height: calc(100vh - var(--header-height));
   
   &--active {
     opacity: 1;

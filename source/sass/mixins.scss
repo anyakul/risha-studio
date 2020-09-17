@@ -1,8 +1,8 @@
 @mixin page-width {
-  width: 78vw;
   height: 80vh;
   padding-bottom: 5vh;
-  max-width: 1300px;
+  width: 78vw;
+  max-width: 1700px;
 
   @media (max-width: $tablet-width) {
     width: 93vw;
@@ -48,9 +48,7 @@ $button-color: #EE3769;
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 2.6em;
-  height:$height;
-  width:$width;
-  padding: 2vh 2vw;
+  padding: 1rem;
   outline: none;
   overflow: hidden;
   color: $blue-color;
@@ -60,8 +58,8 @@ $button-color: #EE3769;
   z-index: 1;
   position: relative;
   position: absolute;
-  font-size: 2.8vh;
-  line-height: 3.6vh;
+  font-size: calc(3.5*var(--rem);
+  line-height: calc(5*var(--rem));
   border: 1px solid $blue-color;
   
   &::before{
@@ -94,13 +92,13 @@ $button-color: #EE3769;
 
 
 @mixin section-header {
-  font-size: 3.2vh;
+  font-size: calc(6.5*var(--rem));
   color: #ffffff;
   font-weight: 500;
   font-family: $font-pragmatica-extended;
   text-decoration: underline;
   margin-bottom: 4.7vh;
-  line-height: 3.5vh;
+  line-height: calc(8*var(--rem));
 
   @media (max-width: $tablet-width) {
     width: 90vw;
@@ -109,12 +107,11 @@ $button-color: #EE3769;
 }
 
 @mixin section-text {
-  font-size: 2.8vh;
+  font-size: calc(5*var(--rem);
+  line-height: calc(5.5*var(--rem));
   color: $red-color;
   font-weight: 300;
-  line-height: 3.2vh;
   font-style: italic;
- height: 3.2vh;
   font-family: $font-pragmatica-extended;
 }
 
@@ -122,8 +119,8 @@ $button-color: #EE3769;
   color: $blue-color;
   font-weight: 600;
   font-family: $font-pragmatica-extended;
-  font-size: 2.7vh;
-  line-height: 3.4vh;
+  font-size: calc(5*var(--rem);
+  line-height: calc(7*var(--rem);
 
   @media (max-width: $mobile-width) {
     font-size: 2.5vh;
@@ -131,8 +128,8 @@ $button-color: #EE3769;
 }
 
 @mixin item-text {
-  font-size: 2.5vh;
-  line-height: 3vh;
+  font-size: calc(5*var(--rem);
+  line-height: calc(7*var(--rem);
   color: #fa868f;
   font-weight: 500;
 
@@ -143,8 +140,8 @@ $button-color: #EE3769;
 }
 
 @mixin blue-button {
-  font-size: 2vh;
-  line-height: 3.6vh;
+  font-size: calc(4.5*var(--rem);
+  line-height: calc(5*var(--rem));
   color: $white-color;
   text-transform: uppercase;
   text-decoration: none;
@@ -186,8 +183,8 @@ $button-color: #EE3769;
 }
 
 @mixin text-header {
-  font-size: 2.2vh;
-  line-height: 2.8vh;
+  font-size: calc(5*var(--rem));
+  line-height: calc(7*var(--rem));
   color: $white-color;
   font-family: $font-pragmatica-extended;
 
@@ -197,8 +194,8 @@ $button-color: #EE3769;
 }
 
 @mixin text {
-  font-size: 2.4vh;
-  line-height: 2.8vh;
+  font-size: calc(5*var(--rem);
+  line-height: calc(6*var(--rem);
   color: $white-color;
 
   @media (max-width: $mobile-width) {
@@ -228,41 +225,40 @@ $button-color: #EE3769;
   border-radius: 18px;
   filter: drop-shadow(4.95px 4.95px 0px rgba(0,0,0,0.05));
   background-image: linear-gradient(90deg, #49d0a8 0%, #43b5af 100%);
-  border: 1px solid #ffffff;
-  font-size: 2.4vh;
-line-height: 2.5vh;
-color: #ffffff;
-text-align: center;
-  background-color: $blue-color;
-  padding: 1vh 5vw 1vh 1.5vw;
+  font-size: calc(4.5*var(--rem);
+  line-height: calc(5*var(--rem));
+  color: #ffffff;
+  text-align: center;
+  text-align: left;
   border-radius: 20px;
   text-transform: uppercase;
   position: relative;
+  border: none;
+  height: calc(13.5*var(--rem);
+  width: 77%;
   
   @media(max-width: $tablet-width) {
-    font-size: 18px;
+    font-size: 2.2vh;
+    line-height: 5vh;
   }
   
   &:before {
     content: "";
-    width: 3vh;
-    height: 3vh;
+    width: calc(11.5*var(--rem));
+    height: 87%;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 10px;
+    right: 8px;
+    background-size: cover;
     background-image: url("../img/button-icon-green.png");
-    background-size: 3vh 3vh;
-  }
-
-  @media (max-width: $mobile-width) {
-    font-size: 12px;
   }
 }
 
 @mixin violet-button {
-  font-size: 20px;
+  font-size: calc(5*var(--rem);
+  line-height: calc(5*var(--rem));
   color: #ffffff;
   border-radius: 10px;
   filter: drop-shadow(4.95px 4.95px 0px rgba(0,0,0,0.05));
@@ -277,7 +273,7 @@ text-align: center;
 @mixin slider-buttons {
   @include button;
   height: 130px;
-  width: 9vw;
+  width: 73px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -298,7 +294,7 @@ text-align: center;
     }
   
   &--left {
-    left: -5vw;
+    left: -90px;
     background-image: url("../img/arrow-left.png");
     
     @media (max-width: $tablet-width) {
@@ -307,7 +303,7 @@ text-align: center;
   }
   
   &--right {
-    right: -10vw;
+    right: -90px;
     background-image: url("../img/arrow-right.png");
     
     @media (max-width: $tablet-width) {
@@ -317,16 +313,18 @@ text-align: center;
 }
 
 @mixin blue-button-in-form {
-  font-size: 2.4vh;
-line-height: 2.5vh;
-color: #ffffff;
-text-align: center;
+  font-size: calc(4.5*var(--rem);
+  line-height: calc(5*var(--rem));
+  color: #ffffff;
+  text-align: center;
   background-color: $blue-color;
-  padding: 1vh 5vw 1vh 1.5vw;
+  padding: 1% 17% 1% 1%;
   border-radius: 20px;
   text-transform: uppercase;
   position: relative;
   border: none;
+  height: calc(13.5*var(--rem);
+  width: 85%;
   
   @media(max-width: $tablet-width) {
     font-size: 2.2vh;
@@ -335,20 +333,20 @@ text-align: center;
   
   &:before {
     content: "";
-    width: 3vh;
-    height: 3vh;
+    width: calc(11.5*var(--rem));
+    height: 87%;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 10px;
-    background-size: 3vh 3vh;
+    right: 8px;
+    background-size: cover;
     background-image: url("../img/button-icon.png");
   }
 }
 
 @mixin item-blue-button {
-  font-size: 2.2vh;
+  font-size: calc(4*var(--rem);
   color: $white-color;
   text-transform: uppercase;
   text-decoration: none;
@@ -356,8 +354,6 @@ text-align: center;
   text-align: center;
   border-radius: 30px;
   padding: 1vh 3%;
-  margin-bottom: 30px;
-  margin-top: 40px;
 
   @media (max-width: $tablet-width) {
     font-size: 1.8vh;
@@ -385,4 +381,9 @@ text-align: center;
   background: transparent;
   border: none;
   outline: none;
+}
+
+:root {
+  --rem: 0.45vh;
+  --header-height: calc(35*var(--rem));
 }

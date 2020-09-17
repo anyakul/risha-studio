@@ -4,10 +4,10 @@
   
   &:before {
     content: "";
-    width: 72vw;
-    height: 35vh;
+    width: 89%;
+    height: 35%;
     z-index: 1;
-    bottom: -2vh;
+    bottom: -14%;
     left: -10%;
     position: absolute;
     background-image: url("../img/price-clouds.png");
@@ -152,7 +152,6 @@
 
 .price__item-text {
   @include text;
-  font-size: 1.6vh;
   color: $black-color;
   font-weight: 300;
   width: 100%;
@@ -235,9 +234,9 @@
 
 .price__form-input {
   @include text;
-  padding: 3vh 3vw;
-  height: 7vh;
-  width: 65%;
+  padding: 3vh 12%;
+  height: calc(4.5*var(--rem);
+  width: 75%;
   border: none;
 border-radius: 10px;
 color: #bfbebe;

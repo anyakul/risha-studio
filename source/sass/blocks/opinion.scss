@@ -1,6 +1,7 @@
 .opinion {
   @include section;
   position: relative;
+  padding-left: calc(67*var(--rem));
   
   &:before {
     content: "";
@@ -32,9 +33,9 @@
     top: 0vh;
     right: -3vw;
   
-  @media (max-width: $tablet-width) {
-    right: 3vw;
-  }
+    @media (max-width: $tablet-width) {
+      right: 3vw;
+    }
   }
 }
 
@@ -146,25 +147,19 @@
 
 .opinion__item-image {
   background-repeat: no-repeat;
-  height: 10vh;
-  width: 86px;
   display: block;
   margin: 0 auto;
   margin-top: -3vh;
   overflow: hidden;
   border-radius: 20px;
-  background-image: linear-gradient(90deg, #825482 0%, #da6d50 100%);
+  background-color: $white-color;
+//  background-image: linear-gradient(90deg, #825482 0%, #da6d50 100%);
   margin-bottom: 10px;
-  
-  img {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .opinion__item-header {
-  font-size: 2.4vh;
-  line-height: 2.8vh;
+  font-size: calc(4*var(--rem));
+  line-height: calc(4.5*var(--rem);
   color: #3e3066;
   font-weight: 500;
   font-family: $font-pragmatica-extended;
@@ -173,8 +168,8 @@
 }
 
 .opinion__item-text {
-  font-size: 2vh;
-  line-height: 2.4vh;
+  font-size: calc(4*var(--rem));
+  line-height: calc(5.5*var(--rem);
   color: #3e3066;
   font-weight: 500;
   margin-bottom: 1vh;
@@ -218,7 +213,8 @@
 }
 
 .opinion__text {
-  font-size: 2.4vh;
+  font-size: calc(4.8*var(--rem));
+  line-height: calc(6*var(--rem);
   color: #ffffff;
   font-weight: 500;
   width: 61%;
@@ -231,7 +227,6 @@
 
 .opinion__button {
   @include violet-button;
-  font-size: 2.6vh;
   width: 38%;
   
   @media (max-width: $mobile-width) {

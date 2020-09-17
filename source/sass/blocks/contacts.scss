@@ -1,5 +1,6 @@
 .contacts {
   @include section;
+  margin-left: 10vw;
   position: relative;
   z-index: 0;
   background-size: 95%;
@@ -17,7 +18,7 @@
 }
 
 .contacts__group {
-  width: 70%;
+  width: 75%;
   //margin: 0 auto;
   
   @media(max-width: $tablet-width) {
@@ -27,10 +28,10 @@
 
 .contacts__image {
   position: absolute;
-  top: 0vh;
+  top: 2%;
  z-index:1;
-  left: -15vw;
-  position: absolute;
+ width: 40%;
+  left: -20%;
   
   @media (max-width: $tablet-width) {
     display: none;
@@ -38,7 +39,7 @@
 } 
 
 .contacts__item {
-  padding: 2vh 3%;
+  padding: 1% 3%;
   border-radius: 10px;
   text-align: center;
   position: relative;
@@ -46,16 +47,16 @@
   
   &:before {
     content: "";
-    width: 24%;
+    width: 25%;
     height: 44%;
-    bottom: -22%;
-    right: -10%;
+    bottom: -210px;
+    right: -13%;
     z-index: 30;
     position: absolute;
     background-image: url("../img/contacts-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-  
+    background-size: cover;
+
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -63,8 +64,8 @@
 }
 
 .contacts__item-header {
-text-align: nenter;
-  font-size: 2.6vh;
+  font-size: calc(5.5*var(--rem);
+  line-height: calc(7*var(--rem));
   color: #ffffff;
   font-family: $font-pragmatica-extended;
   margin-bottom: 2vh;
@@ -97,7 +98,7 @@ text-align: nenter;
   z-index: 30;
   text-align: center;
   padding: 15px;
-  margin-bottom: -50px;
+  margin-bottom: -35px;
 
   @media (max-width: $tablet-width) {
     padding: 0;
