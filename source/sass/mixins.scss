@@ -295,7 +295,7 @@ $button-color: #EE3769;
     }
   
   &--left {
-    left: -90px;
+    left: -120px;
     background-image: url("../img/arrow-left.png");
     
     @media (max-width: $tablet-width) {
@@ -304,7 +304,7 @@ $button-color: #EE3769;
   }
   
   &--right {
-    right: -90px;
+    right: -120px;
     background-image: url("../img/arrow-right.png");
     
     @media (max-width: $tablet-width) {

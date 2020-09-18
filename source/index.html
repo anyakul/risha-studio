@@ -41,7 +41,7 @@
     </header>
     <main class="main">
       <div class="main__wrapper">
-        <section class="main__section main__section--active promo">
+   <!--     <section class="main__section main__section--active promo">
           <div class="promo__wrapper">
             <div class="promo__texts-button">
               <h1 class="promo__header">Создаю работающие инструменты<br> для Вашего бизнеса<br> в условиях российских реалий</h1>
@@ -201,7 +201,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>-->
         <section class="main__section portfolio" id="portfolio">
           <img class="portfolio__image portfolio__image--racket" src="img/racket.png" alt="Логотип">
           <img class="portfolio__image portfolio__image--planet" src="img/planet.png" alt="Логотип">
@@ -209,74 +209,79 @@
           <div class="portfolio__wrapper">
             <h2 class="portfolio__header visually-hidden">Портфолио</h2>
             <div class="portfolio__slides-wrapper">
-          -   <button class="portfolio__button-arrows portfolio__button-arrows--left"></button>
-              <button class="portfolio__button-arrows portfolio__button-arrows--right"></button>
-              <ul class="portfolio__slides">
-                <li class="portfolio__slide">
-                  <div class="portfolio__slide-header-image">
-                    <h3 class="portfolio__slide-header">Транспортная компания "Клевер-карго"</h3>
-                    <img src="img/site.png" alt="сайт">
+              <button class="portfolio__button-arrows portfolio__button-arrows--left" onclick="minusSlide()"></button>
+              <button class="portfolio__button-arrows portfolio__button-arrows--right" onclick="plusSlide()"></button>
+              <div class="portfolio__slide portfolio__slide--first portfolio__slide--active">
+                <div class="portfolio__slide-header-image">
+                  <h3 class="portfolio__slide-header">Транспортная компания "Клевер-карго"</h3>
+                  <div class="portfolio__slide-images">
+                    <img src="img/фирстиль-cargo.png" alt="сайт">
+                    <img src="img/сайт-cargo.png" alt="сайт">
+                    <img src="img/МК-cargo.png" alt="сайт">
                   </div>
-                  <div class="portfolio__slide-text">
-                    <div class="portfolio__slide-text-group">
+                </div>
+                <div class="portfolio__slide-text">
+                  <div class="portfolio__slide-text-group">
+                    <img src="img/icon-purpose.png" alt="Цели">
+                    <h4 class="portfolio__slide-text-group-header">Цели</h4>
+                  </div>
+                  <div class="portfolio__slide-text-group">
+                    <img src="img/icon-task.png" alt="Задачи">
+                    <h4 class="portfolio__slide-text-group-header">Задачи</h4>
+                  </div>
+                  <div class="portfolio__slide-text-group">
+                    <img src="img/icon-methods.png" alt="Решения">
+                    <h4 class="portfolio__slide-text-group-header">Решения</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__slide">
+                <div class="portfolio__slide-header-image">
+                  <h3 class="portfolio__slide-header">Транспортная компания "Клевер-карго"</h3>
+                  <img class="portfolio__slide-image" src="img/site.png" alt="Сайт">
+                    <ul class="portfolio__slide-button-list">
+                      <li class="portfolio__slide-button-item portfolio__slide-button-item--active"></li>
+                      <li class="portfolio__slide-button-item"></li>
+                      <li class="portfolio__slide-button-item"></li>
+                    </ul>
+                </div>
+                <div class="portfolio__slide-main">
+                  <div class="portfolio__slide-text-group portfolio__slide-text-group--purpose">
+                    <img src="img/icon-purpose.png" alt="Цели">
+                    <div class="portfolio__slide-text">
                       <h4 class="portfolio__slide-text-group-header">Цели</h4>
-                    </div>
-                    <div class="portfolio__slide-text-group">
-                      <h4 class="portfolio__slide-text-group-header">Задачи</h4>
-                    </div>
-                    <div class="portfolio__slide-text-group">
-                      <h4 class="portfolio__slide-text-group-header">Решения</h4>
-                    </div>
-                  </div>
-                </li>
-                <li class="portfolio__slide portfolio__slide--active">
-                  <div class="portfolio__slide-header-image">
-                    <h3 class="portfolio__slide-header">Транспортная компания "Клевер-карго"</h3>
-                    <img class="portfolio__slide-image" src="img/site.png" alt="Сайт">
-                      <ul class="portfolio__slide-button-list">
-                        <li class="portfolio__slide-button-item portfolio__slide-button-item--active"></li>
-                        <li class="portfolio__slide-button-item"></li>
-                        <li class="portfolio__slide-button-item"></li>
+                      <ul class="portfolio__slide-list">
+                        <li class="portfolio__slide-item">Создать сильный бренд, с обширным представлением в онлайне</li>
+                        <li class="portfolio__slide-item">Наладить и поддерживать постоянный клиентский поток</li>
                       </ul>
-                  </div>
-                  <div class="portfolio__slide-main">
-                    <div class="portfolio__slide-text-group portfolio__slide-text-group--purpose">
-                      <img src="img/icon-purpose.png" alt="Цели">
-                      <div class="portfolio__slide-text">
-                        <h4 class="portfolio__slide-text-group-header">Цели</h4>
-                        <ul class="portfolio__slide-list">
-                          <li class="portfolio__slide-item">Создать сильный бренд, с обширным представлением в онлайне</li>
-                          <li class="portfolio__slide-item">Наладить и поддерживать постоянный клиентский поток</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="portfolio__slide-text-group portfolio__slide-text-group--task">
-                      <img src="img/icon-task.png" alt="Задачи">
-                      <div class="portfolio__slide-text">
-                        <h4 class="portfolio__slide-text-group-header">Задачи</h4>
-                        <ul class="portfolio__slide-list">
-                          <li class="portfolio__slide-item">Разработка маркетинговой стратегии компании, с учетом отстройки от высококонкурентного рынка</li>
-                          <li class="portfolio__slide-item">Разработка фирменного стиля компании</li>
-                          <li class="portfolio__slide-item">Разработка посадочных страаниц (лендингов) и их дальнейшее a/b тестирование</li>
-                          <li class="portfolio__slide-item">Создание контекстной рекламмы ЯДирект</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="portfolio__slide-text-group portfolio__slide-text-group--methods">
-                      <img src="img/icon-methods.png" alt="Задачи">
-                      <div class="portfolio__slide-text">
-                        <h4 class="portfolio__slide-text-group-header">Решения</h4>
-                        <ul class="portfolio__slide-list">
-                          <li class="portfolio__slide-item">Разработаны все рекламные материалы компании. Забрендирован транспорт и спецодежда для водителей</li>
-                          <li class="portfolio__slide-item">Для формирования УТП проведены исследования интернет-рынка транспортных услуг и сформирован прототип сайта</li>
-                          <li class="portfolio__slide-item">Создано порядка 7 различных посадочных страниц и настроена контекстная реклама Ядирект по методу сегментирования высокорелевантных запросов.</li>
-                          <li class="portfolio__slide-item">Для обработки клиентов подключена аналитика (ЯМетрика, Ройстат), настроена и разведена IP-телефония, подключена и настроена AMOcrm</li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
-                </li>
-              </ul>
+                  <div class="portfolio__slide-text-group portfolio__slide-text-group--task">
+                    <img src="img/icon-task.png" alt="Задачи">
+                    <div class="portfolio__slide-text">
+                      <h4 class="portfolio__slide-text-group-header">Задачи</h4>
+                      <ul class="portfolio__slide-list">
+                        <li class="portfolio__slide-item">Разработка маркетинговой стратегии компании, с учетом отстройки от высококонкурентного рынка</li>
+                        <li class="portfolio__slide-item">Разработка фирменного стиля компании</li>
+                        <li class="portfolio__slide-item">Разработка посадочных страаниц (лендингов) и их дальнейшее a/b тестирование</li>
+                        <li class="portfolio__slide-item">Создание контекстной рекламмы ЯДирект</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="portfolio__slide-text-group portfolio__slide-text-group--methods">
+                    <img src="img/icon-methods.png" alt="Решения">
+                    <div class="portfolio__slide-text">
+                      <h4 class="portfolio__slide-text-group-header">Решения</h4>
+                      <ul class="portfolio__slide-list">
+                        <li class="portfolio__slide-item">Разработаны все рекламные материалы компании. Забрендирован транспорт и спецодежда для водителей</li>
+                        <li class="portfolio__slide-item">Для формирования УТП проведены исследования интернет-рынка транспортных услуг и сформирован прототип сайта</li>
+                        <li class="portfolio__slide-item">Создано порядка 7 различных посадочных страниц и настроена контекстная реклама Ядирект по методу сегментирования высокорелевантных запросов.</li>
+                        <li class="portfolio__slide-item">Для обработки клиентов подключена аналитика (ЯМетрика, Ройстат), настроена и разведена IP-телефония, подключена и настроена AMOcrm</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <a class="portfolio__button" href="#">Еще больше готовых работ</a>
           </div>
@@ -372,7 +377,7 @@
             </div>
           </div>
         </section>
-        <section class="main__section contacts">
+        <section class="main__section contacts" id="contacts">
           <img class="contacts__image" src="img/contacts-plane.png" alt="Логотип">
           <div class="contacts__wrapper">
             <div class="contacts__group">
@@ -397,9 +402,11 @@
     </main>
   </div>
  <!-- <script src="js/promo.js"></script>-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="js/menu-script.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/scrolling.js"></script>
+  <script type="text/javascript" src="js/portfolio-slider.js"></script>
 </body>
 </html>
 

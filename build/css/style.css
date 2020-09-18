@@ -1673,13 +1673,13 @@ html, body {
       top: 130px;
       background-size: cover; } }
   .portfolio__button-arrows--left {
-    left: -90px;
+    left: -120px;
     background-image: url("../img/arrow-left.png"); }
     @media (max-width: 1199px) {
       .portfolio__button-arrows--left {
         left: 10px; } }
   .portfolio__button-arrows--right {
-    right: -90px;
+    right: -120px;
     background-image: url("../img/arrow-right.png"); }
     @media (max-width: 1199px) {
       .portfolio__button-arrows--right {
@@ -1693,20 +1693,94 @@ html, body {
   display: none;
   background-color: #e9e3ea;
   padding: 2% 2vw 2% 2vw;
-  border-radius: 30px; }
-  .portfolio__slide--active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .portfolio__slide--first {
+    padding: 3% 2vw 4% 2vw; }
+    .portfolio__slide--first .portfolio__slide-header-image {
+      width: 106%; }
+      .portfolio__slide--first .portfolio__slide-header-image img {
+        margin: 0 auto;
+        display: block; }
+    .portfolio__slide--first .portfolio__slide-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%; }
+    .portfolio__slide--first .portfolio__slide-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .portfolio__slide--first .portfolio__slide-header {
+      margin-bottom: 2%; }
+    .portfolio__slide--first .portfolio__slide-text-group {
+      margin-right: 5%;
+      border: 3px solid #825482;
+      padding: 1px 5px 1px 1px;
+      margin-bottom: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-transform: uppercase; }
+      .portfolio__slide--first .portfolio__slide-text-group img {
+        margin-right: 10px; }
+    .portfolio__slide--first .portfolio__slide-text-group-header {
+      margin-bottom: 0;
+      font-size: calc(4.5*var(--rem)); }
+    .portfolio__slide--first .portfolio__slide-images {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      margin-left: -5%;
+      margin-bottom: 5%; }
+      .portfolio__slide--first .portfolio__slide-images img {
+        width: 35%; }
   @media (max-width: 767px) {
     .portfolio__slide {
       width: 94vw;
@@ -2033,13 +2107,13 @@ html, body {
       top: 130px;
       background-size: cover; } }
   .opinion__button-arrows--left {
-    left: -90px;
+    left: -120px;
     background-image: url("../img/arrow-left.png"); }
     @media (max-width: 1199px) {
       .opinion__button-arrows--left {
         left: 10px; } }
   .opinion__button-arrows--right {
-    right: -90px;
+    right: -120px;
     background-image: url("../img/arrow-right.png"); }
     @media (max-width: 1199px) {
       .opinion__button-arrows--right {
