@@ -18,7 +18,7 @@
 }
 
 .contacts__group {
-  width: 75%;
+  width: 70%;
   //margin: 0 auto;
   
   @media(max-width: $tablet-width) {
@@ -28,10 +28,10 @@
 
 .contacts__image {
   position: absolute;
-  top: 2%;
+  top: 0;
  z-index:1;
- width: 40%;
-  left: -20%;
+ width: 36%;
+  left: -19%;
   
   @media (max-width: $tablet-width) {
     display: none;
@@ -48,14 +48,13 @@
   &:before {
     content: "";
     width: 25%;
-    height: 44%;
-    bottom: -210px;
-    right: -13%;
+    height: 43%;
+    bottom: -25%;
+    right: -12%;
     z-index: 30;
     position: absolute;
     background-image: url("../img/contacts-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
 
   @media (max-width: $tablet-width) {
     display: none;

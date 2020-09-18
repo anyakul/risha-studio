@@ -15,17 +15,17 @@
   
   &:after {
     content: "";
-    width: 67%;
-    height: 26%;
-    z-index: 1;
-    left: 50%;
-    bottom: calc(4.5*var(--rem);;
+    width: 100%;
+    height: 31%;
+    bottom: 2%;
+    left: -10px;
     position: absolute;
     background-image: url("../img/clouds.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-   // background-position: 100%;
+   // background-position: -5%;
+   background-size: auto 100%;
+    z-index: 1;
+    left: 41%;
 
     @media (max-width: $tablet-width) {
       display: none;
@@ -175,6 +175,13 @@ border-radius: 10px;
 margin-bottom: 25px;
 color: #bfbebe;
 border: none;
+@include text;
+  padding: 3vh 12%;
+  height: calc(4.5*var(--rem);
+  width: 93%;
+  border: none;
+border-radius: 10px;
+color: #bfbebe;
   
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -184,6 +191,7 @@ border: none;
 .work-order__form-button {
   @include green-button-in-form;
   text-align: center;
+  width: 85%;
   
   @media (max-width: $tablet-width) {
     display: block;
@@ -254,7 +262,7 @@ border: none;
     background-image: linear-gradient(0deg, #af6882 0%, #da6d50 100%);
     border-radius: 50%;
     position: absolute;
-    left: -14%;
+    left: -20%;
     top: -5px;
   
     @media (max-width: $tablet-width) {
